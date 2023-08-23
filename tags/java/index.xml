@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>java on Itlaohuo</title>
+    <link>http://example.org/tags/java/</link>
+    <description>Recent content in java on Itlaohuo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 13 Jun 2022 10:58:29 +0800</lastBuildDate><atom:link href="http://example.org/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>7层项目结构和maven创建项目模板</title>
+      <link>http://example.org/java-seven-level-architecture/</link>
+      <pubDate>Mon, 13 Jun 2022 10:58:29 +0800</pubDate>
+      
+      <guid>http://example.org/java-seven-level-architecture/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
