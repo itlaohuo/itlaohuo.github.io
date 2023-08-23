@@ -1,0 +1,369 @@
+<!doctype html><html lang=zh-cn><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><title>演示项目-运维部署记录（demo project devops record） - Itlaohuo</title><meta name=Description content="Itlaohuo的博客"><meta property="og:title" content="演示项目-运维部署记录（demo project devops record）"><meta property="og:description" content><meta property="og:type" content="article"><meta property="og:url" content="http://example.org/demo-project-devops-record/"><meta property="og:image" content="http://example.org/img/Kubenetes.assets/image-20200404094800622.png"><meta property="article:section" content="posts"><meta property="article:published_time" content="2023-08-09T08:21:52+08:00"><meta property="article:modified_time" content="2023-08-09T08:21:52+08:00"><meta property="og:site_name" content="Itlaohuo的博客"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="http://example.org/img/Kubenetes.assets/image-20200404094800622.png"><meta name=twitter:title content="演示项目-运维部署记录（demo project devops record）"><meta name=twitter:description content><meta name=application-name content="Itlaohuo的博客"><meta name=apple-mobile-web-app-title content="Itlaohuo的博客"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=http://example.org/demo-project-devops-record/><link rel=prev href=http://example.org/kubernetes/><link rel=next href=http://example.org/zookeeper-cluster-demo/><link rel=stylesheet href=/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css></noscript><link rel=preload href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"演示项目-运维部署记录（demo project devops record）","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/example.org\/demo-project-devops-record\/"},"genre":"posts","keywords":"devops, jvm, docker","wordcount":1088,"url":"http:\/\/example.org\/demo-project-devops-record\/","datePublished":"2023-08-09T08:21:52+08:00","dateModified":"2023-08-09T08:21:52+08:00","publisher":{"@type":"Organization","name":""},"author":{"@type":"Person","name":"Itlaohuo"},"description":""}</script></head><body data-header-desktop=fixed data-header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"auto"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"auto"==="dark")&&document.body.setAttribute("theme","dark")</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title=Itlaohuo>Itlaohuo</a></div><div class=menu><div class=menu-inner><a class=menu-item href=/posts/>文章 </a><a class=menu-item href=/tags/>标签 </a><a class=menu-item href=/categories/>分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<input type=text placeholder="Search titles or contents..." id=search-input-desktop>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=Search><i class="fas fa-search fa-fw" aria-hidden=true></i></a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=Clear><i class="fas fa-times-circle fa-fw" aria-hidden=true></i></a>
+<span class="search-button search-loading" id=search-loading-desktop><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span>
+</span><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme"><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title=Itlaohuo>Itlaohuo</a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><div class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder="Search titles or contents..." id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=Search><i class="fas fa-search fa-fw" aria-hidden=true></i></a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=Clear><i class="fas fa-times-circle fa-fw" aria-hidden=true></i></a>
+<span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>Cancel</a></div><a class=menu-item href=/posts/ title>文章</a><a class=menu-item href=/tags/ title>标签</a><a class=menu-item href=/categories/ title>分类</a><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title>Contents</h2><div class=toc-content id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">演示项目-运维部署记录（demo project devops record）</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>Itlaohuo</a></span>&nbsp;<span class=post-category>included in <a href=/categories/%E7%AC%94%E8%AE%B0/><i class="far fa-folder fa-fw" aria-hidden=true></i>笔记</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2023-08-09>2023-08-09</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;1088 words&nbsp;
+<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;3 minutes&nbsp;</div></div><div class="details toc" id=toc-static data-kept><div class="details-summary toc-title"><span>Contents</span>
+<span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><a href=#demo-common>demo-common</a><ul><li><a href=#dockerfile>Dockerfile</a></li><li><a href=#tools-目录文件>tools 目录文件</a></li><li><a href=#conf-目录>conf 目录</a></li><li><a href=#bin目录>bin目录</a></li><li><a href=#devops-应用流水线>devops 应用流水线</a></li></ul></li></ul></nav></div></div><div class=content id=content><h2 id=demo-common>demo-common</h2><h3 id=dockerfile>Dockerfile</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>FROM it-registry.itlaohuo.top/libary/centos7-jdk1.8:1.0.22-arms-agent-0510
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>WORKDIR /home
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>COPY ./democommon-service/target/democommon-service-*.jar /home
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>COPY ./docker-file/demo-ccommon/tools /home/tools/
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>COPY ./docker-file/demo-ccommon/conf /home/conf/
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>COPY ./docker-file/demo-ccommon/bin/entrypoint /
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>RUN chmod +x /entrypoint.sh
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>ENTRYPOINT <span class=o>[</span><span class=s2>&#34;/entrypoint.sh&#34;</span><span class=o>]</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=tools-目录文件>tools 目录文件</h3><ul><li>arthas_conn.sh</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=cp>#!/bin/bash
+</span></span></span><span class=line><span class=cl><span class=cp></span><span class=nv>JAVA_TOOL_OPTIONS</span><span class=o>=</span>
+</span></span><span class=line><span class=cl><span class=nv>APP_NAME</span><span class=o>=</span><span class=s2>&#34;vowrk-common&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>ARTHAS_PATH</span> <span class=o>=</span> <span class=s2>&#34;/home/webapps/ArmsAgent2/arthas/arthas-boot.jar&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>JAVA_PID</span><span class=o>=</span><span class=k>$(</span>ps -ef <span class=p>|</span>grep <span class=si>${</span><span class=nv>APP_NAME</span><span class=si>}</span> <span class=p>|</span>grep -v grep <span class=p>|</span>awk <span class=s1>&#39;{print $2}&#39;</span><span class=k>)</span>
+</span></span><span class=line><span class=cl><span class=nv>TELNET_PORT</span><span class=o>=</span><span class=k>$(</span>netstat -lnp <span class=p>|</span>grep 127.0.0.1 <span class=p>|</span>awk <span class=s1>&#39;{print $4}&#39;</span> <span class=p>|</span>awk -F<span class=s1>&#39;:&#39;</span> <span class=s1>&#39;{print $2}&#39;</span><span class=k>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>if</span> <span class=o>[[</span> -n <span class=si>${</span><span class=nv>TELNET_PORT</span><span class=si>}</span><span class=o>]]</span><span class=p>;</span> <span class=k>then</span>
+</span></span><span class=line><span class=cl>    java - jar <span class=si>${</span><span class=nv>ARTHAS_PATH</span><span class=si>}</span> <span class=si>${</span><span class=nv>JAVA_PID</span><span class=si>}</span> --telnet-port <span class=si>${</span><span class=nv>TELNET_PORT</span><span class=si>}</span>
+</span></span><span class=line><span class=cl><span class=k>else</span> 
+</span></span><span class=line><span class=cl>    java -jar <span class=si>${</span><span class=nv>ARTHAS_PATH</span><span class=si>}</span> <span class=si>${</span><span class=nv>JAVA_PID</span><span class=si>}</span>  
+</span></span><span class=line><span class=cl><span class=k>fi</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li>check_health.sh</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=cp>#!/bin/bash
+</span></span></span><span class=line><span class=cl><span class=cp></span><span class=nv>http_code</span><span class=o>=(</span><span class=s2>&#34;200&#34;</span>,
+</span></span><span class=line><span class=cl><span class=s2>&#34;503&#34;</span><span class=o>)</span>
+</span></span><span class=line><span class=cl><span class=k>if</span> <span class=o>[[</span> -n <span class=s2>&#34;</span><span class=si>${</span><span class=nv>http_code</span><span class=p>[@]</span><span class=si>}</span><span class=s2>&#34;</span> <span class=o>=</span> ~ <span class=sb>`</span>curl --connect-timeout <span class=m>8</span> -m <span class=m>8</span> -sL -w <span class=s1>&#39;%{http_code}&#39;</span> http://127.0.0.1:8080/actuator/health -o /dev/null<span class=sb>`</span> <span class=o>]]</span><span class=p>;</span> <span class=k>then</span>
+</span></span><span class=line><span class=cl>    <span class=nb>echo</span> <span class=s2>&#34;server health&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=nb>exit</span> <span class=m>0</span>
+</span></span><span class=line><span class=cl><span class=k>else</span> 
+</span></span><span class=line><span class=cl>    <span class=nb>echo</span> <span class=s2>&#34;check health result&#34;</span> : <span class=sb>`</span>curl --connect-timeout <span class=m>8</span> -m <span class=m>8</span> -sL  http://127.0.0.1:8080/actuator/health <span class=sb>`</span>
+</span></span><span class=line><span class=cl>    <span class=nb>echo</span> <span class=s2>&#34;server not health&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=nb>exit</span> <span class=m>1</span>
+</span></span><span class=line><span class=cl><span class=k>fi</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li>check_ready.sh</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=cp>#!/bin/bash
+</span></span></span><span class=line><span class=cl><span class=cp></span><span class=nv>http_code</span><span class=o>=(</span><span class=s2>&#34;200&#34;</span>,
+</span></span><span class=line><span class=cl><span class=s2>&#34;503&#34;</span><span class=o>)</span>
+</span></span><span class=line><span class=cl><span class=k>if</span> <span class=o>[[</span> -n <span class=s2>&#34;</span><span class=si>${</span><span class=nv>http_code</span><span class=p>[@]</span><span class=si>}</span><span class=s2>&#34;</span> <span class=o>=</span> ~ <span class=sb>`</span>curl --connect-timeout <span class=m>8</span> -m <span class=m>8</span> -sL -w <span class=s1>&#39;%{http_code}&#39;</span> http://127.0.0.1:8080/actuator/health -o /dev/null<span class=sb>`</span> <span class=o>]]</span><span class=p>;</span> <span class=k>then</span>
+</span></span><span class=line><span class=cl>    <span class=nb>echo</span> <span class=s2>&#34;server health&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=nb>exit</span> <span class=m>0</span>
+</span></span><span class=line><span class=cl><span class=k>else</span>  
+</span></span><span class=line><span class=cl>    <span class=nb>echo</span> <span class=s2>&#34;check health result&#34;</span> : <span class=sb>`</span>curl --connect-timeout <span class=m>8</span> -m <span class=m>8</span> -sL  http://127.0.0.1:8080/actuator/health <span class=sb>`</span>
+</span></span><span class=line><span class=cl>    <span class=nb>echo</span> <span class=s2>&#34;server not health&#34;</span>
+</span></span><span class=line><span class=cl>    <span class=nb>exit</span> <span class=m>1</span>
+</span></span><span class=line><span class=cl><span class=k>fi</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li>exit_pod.sh</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=cp>#!/bin/bash
+</span></span></span><span class=line><span class=cl><span class=cp></span>curl --connect-timeout <span class=m>8</span> -m <span class=m>8</span> -sL  http://127.0.0.1:22222/offline
+</span></span><span class=line><span class=cl>sleep <span class=m>20</span>
+</span></span><span class=line><span class=cl>ps -ef <span class=p>|</span> grep java <span class=p>|</span> awk <span class=s1>&#39;{print $2}&#39;</span> <span class=p>|</span> awk <span class=s1>&#39;NR==1&#39;</span> <span class=p>|</span> xargs <span class=nb>kill</span> -15
+</span></span><span class=line><span class=cl><span class=nv>http_code</span><span class=o>=(</span><span class=s2>&#34;200&#34;</span>,
+</span></span><span class=line><span class=cl><span class=s2>&#34;503&#34;</span><span class=o>)</span>
+</span></span><span class=line><span class=cl><span class=k>for</span> i in <span class=o>{</span>1..60<span class=o>}</span>
+</span></span><span class=line><span class=cl><span class=k>do</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=o>[[</span> -n <span class=s2>&#34;</span><span class=si>${</span><span class=nv>http_code</span><span class=p>[@]</span><span class=si>}</span><span class=s2>&#34;</span> <span class=o>=</span> ~ <span class=sb>`</span>curl --connect-timeout <span class=m>8</span> -m <span class=m>8</span> -sL -w <span class=s1>&#39;%{http_code}&#39;</span> http://127.0.0.1:8080/actuator/health -o /dev/null<span class=sb>`</span> <span class=o>]]</span><span class=p>;</span> <span class=k>then</span>
+</span></span><span class=line><span class=cl>        <span class=nb>echo</span> <span class=s2>&#34;server running&#34;</span>
+</span></span><span class=line><span class=cl>        <span class=nb>exit</span> <span class=m>0</span>
+</span></span><span class=line><span class=cl>    <span class=k>else</span> 
+</span></span><span class=line><span class=cl>        <span class=nb>echo</span> <span class=s2>&#34;server stop success&#34;</span>
+</span></span><span class=line><span class=cl>        <span class=nb>exit</span> <span class=m>0</span>
+</span></span><span class=line><span class=cl>    <span class=k>fi</span>
+</span></span><span class=line><span class=cl>    sleep <span class=m>3</span>
+</span></span><span class=line><span class=cl><span class=k>done</span>  
+</span></span></code></pre></td></tr></table></div></div><ul><li>fullgc_dump.sh</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=cp>#!/bin/bash
+</span></span></span><span class=line><span class=cl><span class=cp></span><span class=nb>export</span> <span class=nv>JAVA_TOOL_OPTIONS</span><span class=o>=</span>
+</span></span><span class=line><span class=cl><span class=nv>FGC_NUMD</span><span class=o>=</span><span class=m>0</span>
+</span></span><span class=line><span class=cl><span class=nv>FGC_NUM</span><span class=o>=</span><span class=m>0</span>
+</span></span><span class=line><span class=cl><span class=nv>tmp_file</span><span class=o>=</span><span class=s2>&#34;/tmp/fullgc&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>health_file</span><span class=o>=</span><span class=s2>&#34;/tmp/tools/check_health.sh&#34;</span>
+</span></span><span class=line><span class=cl><span class=nv>ready_file</span><span class=o>=</span><span class=s2>&#34;/tmp/tools/ready_health.sh&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>while</span> true<span class=p>;</span><span class=k>do</span>
+</span></span><span class=line><span class=cl>    sleep <span class=m>10</span>
+</span></span><span class=line><span class=cl>    <span class=o>[[</span> -f <span class=si>${</span><span class=nv>tmp_file</span><span class=si>}</span> <span class=o>]]</span> <span class=o>&amp;&amp;</span> <span class=nv>FGC_NUMD</span><span class=o>=</span><span class=k>$(</span>cat <span class=si>${</span><span class=nv>tmp_file</span><span class=si>}</span> <span class=p>|</span>tail -1<span class=k>)</span>
+</span></span><span class=line><span class=cl>    <span class=nv>FGC_NUM</span><span class=o>=</span><span class=k>$(</span>jstat -gc <span class=m>1</span> <span class=p>|</span>awk <span class=s1>&#39;{print $15}&#39;</span> <span class=p>|</span>tail -1<span class=k>)</span>
+</span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=o>[</span> <span class=si>${</span><span class=nv>FGC_NUM</span><span class=si>}</span> -gt <span class=si>${</span><span class=nv>FGC_NUMD</span><span class=si>}</span> <span class=o>]</span><span class=p>;</span> <span class=k>then</span>
+</span></span><span class=line><span class=cl>        mv <span class=si>${</span><span class=nv>health_file</span><span class=si>}</span>  <span class=si>${</span><span class=nv>health_file</span><span class=si>}</span>.bak
+</span></span><span class=line><span class=cl>        <span class=nb>echo</span>  <span class=m>1</span> &gt;  <span class=si>${</span><span class=nv>health_file</span><span class=si>}</span>
+</span></span><span class=line><span class=cl>        mv <span class=si>${</span><span class=nv>ready_file</span><span class=si>}</span>  <span class=si>${</span><span class=nv>ready_file</span><span class=si>}</span>.bak
+</span></span><span class=line><span class=cl>        <span class=nb>echo</span>  <span class=m>0</span> &gt;  <span class=si>${</span><span class=nv>ready_file</span><span class=si>}</span>
+</span></span><span class=line><span class=cl>        jmap -F -dump:live,format<span class=o>=</span>b,file<span class=o>=</span>./dump-<span class=si>${</span><span class=nv>date</span><span class=p> +%F-%M-%S</span><span class=si>}</span>.hprof <span class=m>1</span>
+</span></span><span class=line><span class=cl>        <span class=nb>echo</span> <span class=si>${</span><span class=nv>FGC_NUM</span><span class=si>}</span> &gt;&gt; <span class=si>${</span><span class=nv>tmp_file</span><span class=si>}</span>
+</span></span><span class=line><span class=cl>        rm -f <span class=si>${</span><span class=nv>health_file</span><span class=si>}</span> <span class=si>${</span><span class=nv>ready_file</span><span class=si>}</span>
+</span></span><span class=line><span class=cl>        mv <span class=si>${</span><span class=nv>health_file</span><span class=si>}</span>.bak  <span class=si>${</span><span class=nv>health_file</span><span class=si>}</span>
+</span></span><span class=line><span class=cl>        mv <span class=si>${</span><span class=nv>ready_file</span><span class=si>}</span>.bak  <span class=si>${</span><span class=nv>ready_file</span><span class=si>}</span>
+</span></span><span class=line><span class=cl>    <span class=k>fi</span>
+</span></span><span class=line><span class=cl><span class=k>done</span>
+</span></span><span class=line><span class=cl>  
+</span></span></code></pre></td></tr></table></div></div><h3 id=conf-目录>conf 目录</h3><ul><li>cn-dev.sh</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=nv>JAVA_OPTION</span><span class=o>=</span><span class=s2>&#34;-DsetaEnv=dev -Dserver.port=8080 \
+</span></span></span><span class=line><span class=cl><span class=s2>-Dapp.id=demo-cn-common -Dapollo.meta=http://it-apollo-dev.itlaohuo.top/ \
+</span></span></span><span class=line><span class=cl><span class=s2>-Denv=dev -DserverAddr=it-seata-nacos.itlaohuo.top \
+</span></span></span><span class=line><span class=cl><span class=s2>-Xmx8000M -Xms8000M -Xss512K -XX:MaxMetaspaceSize=1024M -XX:MetaspaceSize=1024M -XX:+UseG1GC \
+</span></span></span><span class=line><span class=cl><span class=s2>-XX:MaxGCPauseMillis=200 -XX:G1HeapRegionSize=16M \
+</span></span></span><span class=line><span class=cl><span class=s2>-Dit.log.switch=true \
+</span></span></span><span class=line><span class=cl><span class=s2>-Dit.app.name=demo-common \
+</span></span></span><span class=line><span class=cl><span class=s2>-Dit.app.env=dev \
+</span></span></span><span class=line><span class=cl><span class=s2>-D.server.tomcat.max-thread=500 \
+</span></span></span><span class=line><span class=cl><span class=s2>-Dnamespace=2506f038-7c4b-4af3-8fa1-c4915ac6694f -Dencrptionkey=23asdwee2343afwe \
+</span></span></span><span class=line><span class=cl><span class=s2>-Duser.home=/data01/demo-common/logs&#34;</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li>cn-pro.sh</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=nv>JAVA_OPTION</span><span class=o>=</span><span class=s2>&#34;-Dserver.port=8080 \
+</span></span></span><span class=line><span class=cl><span class=s2>-Dapp.id=demo-cn-common  \ 
+</span></span></span><span class=line><span class=cl><span class=s2>-Dapollo.meta=http://it-apollo-pro.itlaohuo.top/ \
+</span></span></span><span class=line><span class=cl><span class=s2>-Dapollo.bootstarp.namespaces=application,v2 \
+</span></span></span><span class=line><span class=cl><span class=s2>-Dapollo.clientAuthKeyName=d6e25b4a0cf4b60  -Denv=pro -Dnamespace=759623-xxxxxxx\
+</span></span></span><span class=line><span class=cl><span class=s2>-DserverAddr=it-seata-nacos.itlaohuo.top -DsetaEnv=pro -Dencrptionkey=07cxxxxxxxx \
+</span></span></span><span class=line><span class=cl><span class=s2>-Duser.home=/data01/democommon \
+</span></span></span><span class=line><span class=cl><span class=s2>-Xmx21000M -Xms21000M -XX:MaxMetaspaceSize=1024M -XX:MetaspaceSize=1024M -XX:+UseG1GC \
+</span></span></span><span class=line><span class=cl><span class=s2>-XX:MaxGCPauseMillis=200  -XX:+ParallelRefProcEnabled \
+</span></span></span><span class=line><span class=cl><span class=s2>-XX:ErrorFile=/home/logs/gc/hs_err_pid%p.log -Xloggc:/home/gc/gc.log \
+</span></span></span><span class=line><span class=cl><span class=s2>-XX:HeadDumpPath=/home/logs/gc/commondump \ 
+</span></span></span><span class=line><span class=cl><span class=s2>-XX:+HeadDumpOnOutOfMemoryError \
+</span></span></span><span class=line><span class=cl><span class=s2>-XX:+PrintGCDetails -XX:+PrintGCDateStamps \
+</span></span></span><span class=line><span class=cl><span class=s2>-XX:+PrintGCApplicationConcurrentTime \
+</span></span></span><span class=line><span class=cl><span class=s2>-XX:+PrintGCApplicationStoppedTime \
+</span></span></span><span class=line><span class=cl><span class=s2>-XX:+PrintHeadAtGC \
+</span></span></span><span class=line><span class=cl><span class=s2>-Dit.log.switch=true \
+</span></span></span><span class=line><span class=cl><span class=s2>-Dit.app.name=demo-common \
+</span></span></span><span class=line><span class=cl><span class=s2>-Dit.app.env=pro \
+</span></span></span><span class=line><span class=cl><span class=s2>-D.rocket.mq.gray.switch=true \
+</span></span></span><span class=line><span class=cl><span class=s2>-Ddubbo.labels=stag=v2 \
+</span></span></span><span class=line><span class=cl><span class=s2>-Dxxl.job.executor.gray=false&#34;</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li>cn-pro-grey.sh</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=nv>JAVA_OPTION</span><span class=o>=</span><span class=s2>&#34;-Dserver.port=8080 \
+</span></span></span><span class=line><span class=cl><span class=s2>-Dapp.id=demo-cn-common  \ 
+</span></span></span><span class=line><span class=cl><span class=s2>-Dapollo.meta=http://it-apollo-pro.itlaohuo.top/ \
+</span></span></span><span class=line><span class=cl><span class=s2>-Dapollo.bootstarp.namespaces=application,v1 \
+</span></span></span><span class=line><span class=cl><span class=s2>-Dapollo.clientAuthKeyName=d6e25b4a0cf4b60  -Denv=pro -Dnamespace=759623-xxxxxxx\
+</span></span></span><span class=line><span class=cl><span class=s2>-DserverAddr=it-seata-nacos.itlaohuo.top -DsetaEnv=pro -Dencrptionkey=07cxxxxxxxx \
+</span></span></span><span class=line><span class=cl><span class=s2>-Duser.home=/data01/democommon \
+</span></span></span><span class=line><span class=cl><span class=s2>-Xmx22000M -Xms22000M -XX:MaxMetaspaceSize=1024M -XX:MetaspaceSize=1024M -XX:+UseG1GC \
+</span></span></span><span class=line><span class=cl><span class=s2>-XX:MaxGCPauseMillis=200  -XX:+ParallelRefProcEnabled \
+</span></span></span><span class=line><span class=cl><span class=s2>-XX:ErrorFile=/home/logs/gc/hs_err_pid%p.log -Xloggc:/home/gc/gc.log \
+</span></span></span><span class=line><span class=cl><span class=s2>-XX:HeadDumpPath=/home/logs/gc/commondump \ 
+</span></span></span><span class=line><span class=cl><span class=s2>-XX:+HeadDumpOnOutOfMemoryError \
+</span></span></span><span class=line><span class=cl><span class=s2>-XX:+PrintGCDetails -XX:+PrintGCDateStamps \
+</span></span></span><span class=line><span class=cl><span class=s2>-XX:+PrintGCApplicationConcurrentTime \
+</span></span></span><span class=line><span class=cl><span class=s2>-XX:+PrintGCApplicationStoppedTime \
+</span></span></span><span class=line><span class=cl><span class=s2>-XX:+PrintHeadAtGC \
+</span></span></span><span class=line><span class=cl><span class=s2>-Dit.log.switch=true \
+</span></span></span><span class=line><span class=cl><span class=s2>-Dit.app.name=demo-common-grey \
+</span></span></span><span class=line><span class=cl><span class=s2>-Dit.app.env=pro \
+</span></span></span><span class=line><span class=cl><span class=s2>-D.rocket.mq.gray.switch=true \
+</span></span></span><span class=line><span class=cl><span class=s2>-Ddubbo.labels=stag=v1 \
+</span></span></span><span class=line><span class=cl><span class=s2>-Dxxl.job.executor.gray=true&#34;</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=bin目录>bin目录</h3><ul><li>entrypoint.sh</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl><span class=cp>#!/bin/bash
+</span></span></span><span class=line><span class=cl><span class=cp></span><span class=nv>JAVA_DUBBO_GROUP</span><span class=o>=</span><span class=s2>&#34;&#34;</span>
+</span></span><span class=line><span class=cl><span class=k>if</span> <span class=o>[</span> <span class=nv>$DUBBO_GROUP</span> <span class=o>]</span><span class=p>;</span><span class=k>then</span>
+</span></span><span class=line><span class=cl>    <span class=nv>JAVA_DUBBO_GROUP</span><span class=o>=</span><span class=s2>&#34;-Ddubbo.provider.group=</span><span class=si>${</span><span class=nv>DUBBO_GROUP</span><span class=si>}</span><span class=s2> -Dbubbo.consumer.group=</span><span class=si>${</span><span class=nv>DUBBO_GROUP</span><span class=si>}</span><span class=s2>&#34;</span>
+</span></span><span class=line><span class=cl><span class=k>fi</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>fi</span> <span class=o>[[</span><span class=nv>$ENV</span> <span class=o>==</span>in* <span class=o>]]</span> <span class=p>;</span><span class=k>then</span>
+</span></span><span class=line><span class=cl>    ln -sf /usr/share/zoneinfo/Asia/Calcutta /etc/licaltime
+</span></span><span class=line><span class=cl><span class=k>elif</span> <span class=o>[[</span><span class=nv>$ENV</span> <span class=o>==</span>eur-pro* <span class=o>]]</span> <span class=p>;</span><span class=k>then</span>
+</span></span><span class=line><span class=cl>    ln -sf /usr/share/zoneinfo/Europe/Paris /etc/licaltime
+</span></span><span class=line><span class=cl><span class=k>fi</span> 
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>mv /home/conf/<span class=si>${</span><span class=nv>ENV</span><span class=si>}</span>.sh /tmp/<span class=si>${</span><span class=nv>ENV</span><span class=si>}</span>.sh
+</span></span><span class=line><span class=cl>rm -rf /home/conf/*.sh
+</span></span><span class=line><span class=cl>mv /tmp/<span class=si>${</span><span class=nv>ENV</span><span class=si>}</span>.sh /home/conf/<span class=si>${</span><span class=nv>ENV</span><span class=si>}</span>.sh
+</span></span><span class=line><span class=cl><span class=nb>source</span> /home/conf/<span class=si>${</span><span class=nv>ENV</span><span class=si>}</span>.sh
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nv>JAVA_OPTION</span> <span class=o>=</span> <span class=s2>&#34;</span><span class=si>${</span><span class=nv>JAVA_DUBBO_GROUP</span><span class=si>}</span><span class=s2>&#34;</span> <span class=se>\
+</span></span></span><span class=line><span class=cl><span class=se></span><span class=si>${</span><span class=nv>JAVA_OPTION</span><span class=si>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nv>JAR_FILE</span><span class=o>=</span> <span class=sb>`</span>find /home/*.jar <span class=p>|</span> awk <span class=s2>&#34;{print </span><span class=nv>$1</span><span class=s2>}&#34;</span><span class=sb>`</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nb>exec</span> java jar -server <span class=nv>$JAVA_OPTION</span> -jar <span class=nv>$JAR_FILE</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=devops-应用流水线>devops 应用流水线</h3><ul><li><p>输入源</p><blockquote><p>代码源 git仓库地址 默认分支</p></blockquote></li><li><p>构建应用</p><blockquote><p>应用类型：JAVA
+构建类型：Maven
+JAVA版本 工具版本
+构建命令：</p></blockquote><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-shell data-lang=shell><span class=line><span class=cl>docker run --rm -u <span class=m>5001</span> -v <span class=sb>`</span><span class=nb>pwd</span><span class=sb>`</span>:/home/code it-registry.itlaohuo.top/libray/centos7-jdk1.8:1,0.16-arms-docker-build /bin/bash -c <span class=s2>&#34;export LC_ALL=en_US.UTF-8 &amp;&amp; mvn -B clean deploy -U -Dmaven.test.skip=true -Dautoconfig.skip -Djob.skip -f ./pom.xml&#34;</span>
+</span></span></code></pre></td></tr></table></div></div></li><li><p>代码扫描</p><blockquote><p>sonar</p></blockquote></li><li><p>构建镜像</p><blockquote><p>Dockerfile 输入方式： 勾选 外部输入源（其他选项：本地输入源，自定义Dockerfile）
+Dockerfile仓库：http://it-gitlab.itlaohuo.top/v-work/docker-file.git
+分支名称：master
+Dockerfile路径：./demo-common/Dockerfile</p></blockquote></li><li><p>推送镜像</p></li><li><p>部署</p><blockquote><p>制品路径：使用上一步推送的镜像
+部署逻辑集群：
+命名空间：
+启动参数：
+环境变量：ENV=cn-dev
+停止前命令：sh /home/tools/exit_pod.sh
+规格：CPU-Request = 1.0 核 CPU-Limited = 1.0核心 内存—Request = 2.0GB 内存-Limited = 2.0GB ； 副本数= 2
+缩放/升级策略：
+健康检查：命令探针；sh /home/tools/check_health.sh ; 设定频率，超时时间，失败阈值</p></blockquote></li></ul></div><script src=https://cdn.jsdelivr.net/gh/jmnote/plantuml-encoder@1.2.4/dist/plantuml-encoder.min.js integrity="sha256-Qsk2KRBCN5qVZX7B+8+2IvQl1Aqc723qV1tBCQaVoqo=" crossorigin=anonymous></script>
+<script>(function(){let e="language-";Array.prototype.forEach.call(document.querySelectorAll("[class^="+e+"]"),function(e){if(console.info(e),e.innerText.indexOf("startuml")>0){console.log("is plantuml:"+e.innerText);let t=document.createElement("IMG");t.loading="lazy",t.src="http://www.plantuml.com/plantuml/svg/~1"+plantumlEncoder.encode(e.innerText),e.parentNode.parentNode.insertBefore(t,e.parentNode),e.style.display="none"}else console.log("not plantuml")})})()</script><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>Updated on 2023-08-09</span></div></div><div class=post-info-line><div class=post-info-md><span><a class=link-to-markdown href=/demo-project-devops-record/index.md target=_blank>Read Markdown</a></span></div><div class=post-info-share><span><a href=javascript:void(0); title="Share on Twitter" data-sharer=twitter data-url=http://example.org/demo-project-devops-record/ data-title="演示项目-运维部署记录（demo project devops record）" data-hashtags=devops,jvm,docker><i class="fab fa-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Facebook" data-sharer=facebook data-url=http://example.org/demo-project-devops-record/ data-hashtag=devops><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Hacker News" data-sharer=hackernews data-url=http://example.org/demo-project-devops-record/ data-title="演示项目-运维部署记录（demo project devops record）"><i class="fab fa-hacker-news fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Line" data-sharer=line data-url=http://example.org/demo-project-devops-record/ data-title="演示项目-运维部署记录（demo project devops record）"><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg aria-hidden=true></i></a><a href=javascript:void(0); title="Share on 微博" data-sharer=weibo data-url=http://example.org/demo-project-devops-record/ data-title="演示项目-运维部署记录（demo project devops record）"><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a></span></div></div></div><div class=post-info-more><section class=post-tags><i class="fas fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/tags/devops/>devops</a>,&nbsp;<a href=/tags/jvm/>jvm</a>,&nbsp;<a href=/tags/docker/>docker</a></section><section><span><a href=javascript:void(0); onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span></section></div><div class=post-nav><a href=/kubernetes/ class=prev rel=prev title="Kubernetes使用手册 (资料来源于B站“冰糖没糖”的分享)"><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>Kubernetes使用手册 (资料来源于B站“冰糖没糖”的分享)</a>
+<a href=/zookeeper-cluster-demo/ class=next rel=next title=使用Docker快速搭建ZooKeeper集群>使用Docker快速搭建ZooKeeper集群<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div></div><div id=comments></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.110.0">Hugo</a> | Theme - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden=true></i> LoveIt</a></div><div class=footer-line itemscope itemtype=http://schema.org/CreativeWork><i class="far fa-copyright fa-fw" aria-hidden=true></i><span itemprop=copyrightYear>2021 - 2023</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>Itlaohuo</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title="Back to Top"><i class="fas fa-arrow-up fa-fw" aria-hidden=true></i>
+</a><a href=# id=view-comments class=fixed-button title="View Comments"><i class="fas fa-comment fa-fw" aria-hidden=true></i></a></div><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css><script type=text/javascript src=https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:50},comment:{},lightgallery:!0,search:{highlightTag:"em",lunrIndexURL:"/index.json",maxResultLength:10,noResultsFound:"No results found",snippetLength:30,type:"lunr"}}</script><script type=text/javascript src=/js/theme.min.js></script></body></html>
