@@ -1,0 +1,731 @@
+<!doctype html><html lang=zh-cn><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><title>Yifeng_20230911 - Itlaohuo</title><meta name=Description content="Itlaohuo的博客"><meta property="og:title" content="Yifeng_20230911"><meta property="og:description" content><meta property="og:type" content="article"><meta property="og:url" content="http://example.org/yifeng_20230911/"><meta property="og:image" content="http://example.org/img/Kubenetes.assets/image-20200404094800622.png"><meta property="article:section" content="posts"><meta property="article:published_time" content="2023-09-11T18:08:35+08:00"><meta property="article:modified_time" content="2023-09-11T18:08:35+08:00"><meta property="og:site_name" content="Itlaohuo的博客"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="http://example.org/img/Kubenetes.assets/image-20200404094800622.png"><meta name=twitter:title content="Yifeng_20230911"><meta name=twitter:description content><meta name=application-name content="Itlaohuo的博客"><meta name=apple-mobile-web-app-title content="Itlaohuo的博客"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=http://example.org/yifeng_20230911/><link rel=prev href=http://example.org/after-package-xlsx-cannot-open/><link rel=next href=http://example.org/dfs_bfs/><link rel=stylesheet href=/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css></noscript><link rel=preload href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Yifeng_20230911","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/example.org\/yifeng_20230911\/"},"genre":"posts","keywords":"interview","wordcount":7811,"url":"http:\/\/example.org\/yifeng_20230911\/","datePublished":"2023-09-11T18:08:35+08:00","dateModified":"2023-09-11T18:08:35+08:00","publisher":{"@type":"Organization","name":""},"author":{"@type":"Person","name":"itlaohuo"},"description":""}</script></head><body data-header-desktop=fixed data-header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"auto"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"auto"==="dark")&&document.body.setAttribute("theme","dark")</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title=Itlaohuo>Itlaohuo</a></div><div class=menu><div class=menu-inner><a class=menu-item href=/posts/>文章 </a><a class=menu-item href=/tags/>标签 </a><a class=menu-item href=/categories/>分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<input type=text placeholder="Search titles or contents..." id=search-input-desktop>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=Search><i class="fas fa-search fa-fw" aria-hidden=true></i></a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=Clear><i class="fas fa-times-circle fa-fw" aria-hidden=true></i></a>
+<span class="search-button search-loading" id=search-loading-desktop><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span>
+</span><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme"><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title=Itlaohuo>Itlaohuo</a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><div class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder="Search titles or contents..." id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=Search><i class="fas fa-search fa-fw" aria-hidden=true></i></a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=Clear><i class="fas fa-times-circle fa-fw" aria-hidden=true></i></a>
+<span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>Cancel</a></div><a class=menu-item href=/posts/ title>文章</a><a class=menu-item href=/tags/ title>标签</a><a class=menu-item href=/categories/ title>分类</a><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title>Contents</h2><div class=toc-content id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Yifeng_20230911</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>itlaohuo</a></span>&nbsp;<span class=post-category>included in <a href=/categories/interview/><i class="far fa-folder fa-fw" aria-hidden=true></i>interview</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2023-09-11>2023-09-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;7811 words&nbsp;
+<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;16 minutes&nbsp;</div></div><div class="details toc" id=toc-static data-kept><div class="details-summary toc-title"><span>Contents</span>
+<span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><a href=#1可重入锁>1、可重入锁</a><ul><li><a href=#11-理解>1.1 理解</a></li><li><a href=#两个条件>两个条件：</a></li><li><a href=#java中的实现>JAVA中的实现</a></li><li><a href=#引申-aqs原理>引申 AQS原理</a></li></ul></li><li><a href=#2synchronized锁升级过程>2、synchronized锁升级过程</a></li><li><a href=#3countdownlauch工作原理>3、countDownLauch工作原理</a></li><li><a href=#4说下spring-ioc以及中间用了什么设计模式>4、说下Spring IOC，以及中间用了什么设计模式</a><ul><li><a href=#1工厂模式>1、工厂模式</a></li><li><a href=#3策略模式>3、策略模式</a></li><li><a href=#4装饰器模式>4、装饰器模式</a></li><li><a href=#5-代理模式>5 代理模式</a></li><li><a href=#6-责任链模式>6 责任链模式</a></li></ul></li><li><a href=#5说下springboot和spring的区别>5、说下SpringBoot和Spring的区别?</a></li><li><a href=#6线程池核心参数以及说下工作原理工作中使用什么工作队列以及用了什么拒绝策略>6、线程池核心参数、以及说下工作原理?工作中使用什么工作队列?以及用了什么拒绝策略?</a></li><li><a href=#7说说jvm垃圾搜集器-docker容器4g你给jvm最大堆内存分配多少>7、说说JVM垃圾搜集器? docker容器4G，你给JVM最大堆内存分配多少?</a></li><li><a href=#8说下哪些场景需要打破双亲委派机制>8、说下哪些场景需要打破双亲委派机制?</a></li><li><a href=#9cpu飙高jvm内存泄漏如何解决>9、CPU飙高、JVM内存泄漏如何解决?</a><ul><li><a href=#gc-统计>GC 统计</a></li><li><a href=#堆内存统计>堆内存统计</a></li></ul></li><li><a href=#10redis数据结构>10、redis数据结构?</a></li><li><a href=#11说下mysqlinnodb索引数据结构>11、说下mysqlinnodb索引数据结构?</a></li><li><a href=#12说下模板模式在spring-ioc的应用>12、说下模板模式在Spring IoC的应用</a></li><li><a href=#13mysql事务有哪些默认事务是什么>13、mysql事务有哪些?默认事务是什么?</a></li><li><a href=#14说下kafka生产者消费者整套流程生产者批量提交配置项目是如何配>14、说下kafka生产者、消费者整套流程?生产者批量提交配置，项目是如何配</a></li><li><a href=#16zk的特性-zk实现注册中心的原理服务提供者挂了zk会怎么样>16、zk的特性? zk实现注册中心的原理?服务提供者挂了，zk会怎么样?</a></li><li><a href=#17说下mysql都有哪些日志文件每个文件的作用是什么>17、说下mysql都有哪些日志文件?每个文件的作用是什么?</a></li><li><a href=#18说下mysql-数据结构文件有哪些>18、说下mysql 数据结构文件有哪些?</a></li><li><a href=#19说下kafka都有哪些核心文件>19、说下kafka都有哪些核心文件?</a></li><li><a href=#20说下redission分布式锁的实现原理>20、说下redission分布式锁的实现原理?</a></li><li><a href=#21说下lru算法的实现>21、说下lru算法的实现?</a><ul><li><a href=#1-利用linkedhashmap实现lru算法>1 利用LinkedHashMap实现LRU算法</a></li><li><a href=#2-哈希表双向链表实现>2 哈希表+双向链表实现</a></li></ul></li></ul></nav></div></div><div class=content id=content><h2 id=1可重入锁>1、可重入锁</h2><h3 id=11-理解>1.1 理解</h3><ul><li>可重入锁，也叫做 递归锁，从名字上理解就是可以再进入的锁，重入性是指任意线程在获取到锁之后能够再次获取该锁而不会被锁阻塞</li></ul><h3 id=两个条件>两个条件：</h3><ul><li>1 线程再次获取锁 ，2 可释放，线程重复n次获取了锁，随后在第n次释放该锁后，其它线程能够获取到该锁</li></ul><h3 id=java中的实现>JAVA中的实现</h3><ul><li>synchronized 关键字所使用的锁也是可重入的</li><li>ReentrantLock继承自 Lock接口</li><li>通过<strong>Sync</strong> 类，即自定义的同步组件实现，它是 ReentrantLock 里面的一个内部类，它继承自<strong>AQS(AbstractQueuedSynchronizer)</strong>，Sync 有两个子类：公平锁 <strong>FairSync</strong> 和 非公平锁 <strong>NonfairSync</strong></li><li>NonfairSync 的 lock() 方法：</li></ul><blockquote><ul><li>1 CAS自旋操作state(0,1)</li><li>2 失败则 aqs.acquire(1),在acquire(1)中是一套锁抢占的模板,会先调tryAcquire,tryAcquire() 这个钩子方法去尝试获取锁，这个方法就是在 NonfairSync.<strong>tryAcquire()<strong>下的 nonfairTryAcquire().(先尝试CAS，state！=0就接着判断</strong>是否同一个线程所持有</strong>,如果是设置state+1)</li><li>3 如果nonfairTryAcquire的以上两种情况都不通过，则返回失败false，就会则进入 acquireQueued() 流程，也就是基于CLH队列的抢占模式； 进入的时候也会去执行一次获取锁的操作，如果还是获取不到，就调用LockSupport.park() 将当前线程挂起。那么当前线程什么时候会被唤醒呢？当持有锁的那个线程调用 unlock() 的时候，会将CLH队列的头节点的下一个节点上的线程唤醒，调用的是 LockSupport.unpark() 方法。</li></ul></blockquote><h3 id=引申-aqs原理>引申 AQS原理</h3><ul><li>AQS（AbstractQueuedSynchronizer）是Java中用于构建锁和同步器的底层框架。它提供了一个灵活的方式来实现各种同步机制，如ReentrantLock、Semaphore、CountDownLatch等，并且也可用于构建自定义的同步器。AQS的核心思想是基于队列的等待，通过管理一个等待队列来实现线程的排队和唤醒。</li><li>AQS底层使用了模板方法模式，自定义同步器时需要重写下面几个AQS提供的模板方法：</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>isHeldExclusively()//该线程是否正在独占资源。只有用到condition才需要去实现它。
+</span></span><span class=line><span class=cl>tryAcquire(int)//独占方式。尝试获取资源，成功则返回true，失败则返回false。
+</span></span><span class=line><span class=cl>tryRelease(int)//独占方式。尝试释放资源，成功则返回true，失败则返回false。
+</span></span><span class=line><span class=cl>tryAcquireShared(int)//共享方式。尝试获取资源。负数表示失败；0表示成功，但没有剩余可用资源；正数表示成功，且有剩余资源。
+</span></span><span class=line><span class=cl>tryReleaseShared(int)//共享方式。尝试释放资源，成功则返回true，失败则返回false。
+</span></span></code></pre></td></tr></table></div></div><ul><li>参考文章[JUC锁: 锁核心类AQS详解}(https://pdai.tech/md/java/thread/java-thread-x-lock-AbstractQueuedSynchronizer.html)</li></ul><h2 id=2synchronized锁升级过程>2、synchronized锁升级过程</h2><ul><li>Java 详细对象结构: 对象头（<strong>Mark Word、Class Pointer、数组长度</strong>三个字段组成），对象体，对齐字节 ; Mark Word主要用来表示当前 Java 对象的线程锁状态以及 GC 的标志，可以表示 4 种不同的锁状态</li><li><strong>无锁状态</strong>：初始状态，没有线程占用锁，线程可以无竞争地进入临界区。</li><li><strong>偏向锁状态</strong>：当只有一个线程访问临界区时，该线程会偏向于锁，以提高性能。如果其他线程尝试进入临界区，偏向锁会升级为轻量级锁。</li><li><strong>轻量级锁状态</strong>：多个线程竞争同一把锁，但还没有争用到达一定程度。这时，锁会升级为轻量级锁，<strong>使用CAS操作来尝试获取锁</strong>，避免了传统的重量级锁的开销。</li><li><strong>重量级锁状态</strong>：多个线程争用锁的情况下，试图抢占的线程<strong>自旋达到阈值</strong>，就会停止自旋，那么此时锁就会膨胀成重量级锁，锁会升级为重量级锁，通过操作系统的互斥原语来实现线程的阻塞和唤醒。</li><li>锁的升级过程通常是自动的，根据竞争情况和线程行为，锁会在不同状态之间切换以优化性能。这个过程在JVM内部进行管理，开发者一般不需要显式干预。详细了解锁升级过程可以帮助优化多线程程序的性能。</li></ul><h2 id=3countdownlauch工作原理>3、countDownLauch工作原理</h2><ul><li>其底层是由AQS提供支持，所以其数据结构可以参考AQS的数据结构，而AQS的数据结构核心就是两个虚拟队列: 同步队列sync queue 和条件队列condition queue，不同的条件会有不同的条件队列。CountDownLatch典型的用法是将一个程序分为n个互相独立的可解决任务，并创建值为n的CountDownLatch。</li><li>核心函数 - await函数；此函数将会使当前线程在锁存器倒计数至零之前一直等待，除非线程被中断。对CountDownLatch对象的await的调用会转发为对Sync的acquireSharedInterruptibly(从AQS继承的方法)方法的调用。</li></ul><h2 id=4说下spring-ioc以及中间用了什么设计模式>4、说下Spring IOC，以及中间用了什么设计模式</h2><ul><li>使用对象时候由主动new对象转换成由外部提供对象,此过程中对象的创建权由程序转移到外部，这种思想叫做控制反转
+Spring技术对此提供的实现
+Spring提供了一个容器，称为IOC容器，用来充当IOC思想中的外部
+IOC容器负责对象的创建、初始化等一系列工作，被创建或被管理的对象在IOC容器中统称为Bean。</li></ul><h3 id=1工厂模式>1、工厂模式</h3><p>Spring中在各种BeanFactory以及ApplicationContext创建中都用到了典型的工厂方法模式
+###　2、单例模式
+在Spring中，所有的bean默认都是单例创建的。在创建bean的代码中我们经常看到Singleton这个单词。下面我们通过代码看看单例是怎么实现的。
+AbstractBeanFactory.doGetBean()</p><h3 id=3策略模式>3、策略模式</h3><p>在依赖注入的过程中，Spring会调用ApplicationContext 来获取Resource的实例。然而，Resource 接口封装了各种可能的资源类型，包括了：UrlResource，ClassPathResource，FileSystemResource等，Spring需要针对不同的资源采取不同的访问策略。在这里，Spring让ApplicationContext成为了资源访问策略的“决策者”。在资源访问策略的选择上，Spring采用了策略模式。当 Spring 应用需要进行资源访问时，它并不需要直接使用 Resource 实现类，而是调用 ApplicationContext 实例的 getResource() 方法来获得资源，ApplicationContext 将会负责选择 Resource 的实现类，也就是确定具体的资源访问策略，从而将应用程序和具体的资源访问策略分离开来。</p><h3 id=4装饰器模式>4、装饰器模式</h3><p>Spring中类中带有Wrapper的都是包装类</p><h3 id=5-代理模式>5 代理模式</h3><p>AOP等等</p><h3 id=6-责任链模式>6 责任链模式</h3><p>Filter等</p><h2 id=5说下springboot和spring的区别>5、说下SpringBoot和Spring的区别?</h2><ul><li>Spring和Spring Boot基于IOC AOP理念实现，Spring Boot集成了Spring。</li><li>对于我来说，Spring框架就是提供了IOC容器、控制反转、依赖注入以及一些模块，简化了大量的代码，便捷了程序的开发，节省了开发时间，提高了效率。</li><li>在我看来Spring Boot框架是对Spring框架的补充，它消除了Spring框架配置XML的麻烦事，完善了Spring框架的开发环境，使我们可以更加高效的完成编程，并且为我们提供了 spring-boot-starter-xxx 依赖，写大量的配置，现在用Spring Boot只需要导入相关依赖。</li><li>Spring 和 Spring Boot的最大的区别在于Spring Boot的自动装配原理</li><li>在我看来是SpringBoot（spring）将java推上了神座。</li></ul><h2 id=6线程池核心参数以及说下工作原理工作中使用什么工作队列以及用了什么拒绝策略>6、线程池核心参数、以及说下工作原理?工作中使用什么工作队列?以及用了什么拒绝策略?</h2><h2 id=7说说jvm垃圾搜集器-docker容器4g你给jvm最大堆内存分配多少>7、说说JVM垃圾搜集器? docker容器4G，你给JVM最大堆内存分配多少?</h2><h2 id=8说下哪些场景需要打破双亲委派机制>8、说下哪些场景需要打破双亲委派机制?</h2><ul><li>当某个类加载器需要加载某个.class文件时，它首先把这个任务委托给他的上级类加载器，递归这个操作，如果上级的类加载器没有加载，自己才会去加载这个类。</li><li>BootstrapClassLoader 《== ExtClassLoader 《== AppClassLoader 《== CustomClassLoader（用户自定义）</li><li>1 防止加载同一个.class。通过委托去询问上级是否已经加载过该.class，如果加载过了，则不需要重新加载。保证了数据安全。</li><li>2 保证核心.class不被篡改。通过委托的方式，保证核心.class不被篡改，即使被篡改也不会被加载，即使被加载也不会是同一个class对象，因为不同的加载器加载同一个.class也不是同一个Class对象。这样则保证了Class的执行安全。</li><li>自定义类加载器：</li></ul><blockquote><p>如果不想打破双亲委派模型，就重写ClassLoader类中的findClass()方法即可，无法被父类加载器加载的类最终会通过这个方法被加载
+而如果想打破双亲委派模型则需要重写ClassLoader类loadClass()方法（当然其中的坑也不会少）。典型的打破双亲委派模型的框架和中间件有tomcat与osgi</p></blockquote><h2 id=9cpu飙高jvm内存泄漏如何解决>9、CPU飙高、JVM内存泄漏如何解决?</h2><ul><li>可以使用jps查看java程序的资源占用，下面介绍使用top命令的</li><li>top 命令查找CPU和内存信息，根据排行可以取得对应进程id （ 如：top -p 452 查找指定进程的cpu内存信息）</li><li>top -H -p 452 // 查看指定进程452的所有线程的CPU内存信息</li><li>记录CPU或内存占用高的线程ID，转化为对应的16进制，堆栈中搜索用( print命令（printf &ldquo;%x \n&rdquo; 15）： 或其他工具）</li><li><strong>jstack -l 108032 | grep 1a601 -A 74</strong> ； 打印线程108033（父进程是108032）的快照。 108033转成11a601</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>linux1@linuxonetest:~$ jstack -l 108032 | grep 1a601 -A 74
+</span></span><span class=line><span class=cl>&#34;main&#34; #1 prio=5 os_prio=0 cpu=1447919.07ms elapsed=1448.76s tid=0x000003ff7c016c30 nid=0x1a601 runnable  [0x000003ff823fd000]
+</span></span><span class=line><span class=cl>   java.lang.Thread.State: RUNNABLE
+</span></span><span class=line><span class=cl>        at main.main(main.java:11)
+</span></span><span class=line><span class=cl>        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(java.base@17.0.8.1/Native Method)
+</span></span><span class=line><span class=cl>        at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(java.base@17.0.8.1/NativeMethodAccessorImpl.java:77)
+</span></span><span class=line><span class=cl>        at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(java.base@17.0.8.1/DelegatingMethodAccessorImpl.java:43)
+</span></span><span class=line><span class=cl>        at java.lang.reflect.Method.invoke(java.base@17.0.8.1/Method.java:568)
+</span></span><span class=line><span class=cl>        at com.sun.tools.javac.launcher.Main.execute(jdk.compiler@17.0.8.1/Main.java:419)
+</span></span><span class=line><span class=cl>        at com.sun.tools.javac.launcher.Main.run(jdk.compiler@17.0.8.1/Main.java:192)
+</span></span><span class=line><span class=cl>        at com.sun.tools.javac.launcher.Main.main(jdk.compiler@17.0.8.1/Main.java:132)
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   Locked ownable synchronizers:
+</span></span><span class=line><span class=cl>        - None
+</span></span></code></pre></td></tr></table></div></div><ul><li>可以看到是代码 11行： at main.main(main.java:11) ; 查看代码可以知道代码里面while循序一直在处理任务，没有让出CPU，导致CPU飙升</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl> 1
+</span></span><span class=line><span class=cl>  2 public class main{
+</span></span><span class=line><span class=cl>  3
+</span></span><span class=line><span class=cl>  4
+</span></span><span class=line><span class=cl>  5 public static void main(String[] args){
+</span></span><span class=line><span class=cl>  6         while(true){
+</span></span><span class=line><span class=cl>  7             // System.out.println(&#34;Hello wordl&#34;);
+</span></span><span class=line><span class=cl>  8             //
+</span></span><span class=line><span class=cl>  9             int a =  10000 + 50000000;
+</span></span><span class=line><span class=cl> 10             a =  a / 1000 ;
+</span></span><span class=line><span class=cl> 11         }
+</span></span><span class=line><span class=cl> 12
+</span></span><span class=line><span class=cl> 13 }
+</span></span><span class=line><span class=cl> 14 }
+</span></span></code></pre></td></tr></table></div></div><ul><li>内存泄漏如何排查</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl># 外部触发 调用 循环次数最好通过外部控制
+</span></span><span class=line><span class=cl>while(true) {
+</span></span><span class=line><span class=cl>    		System.out.println(&#34;一刻不停的处理任务&#34;);
+</span></span><span class=line><span class=cl>    		list.add(new String(new byte[1024 * 1024]) + &#34;处理任务分配一个1M的对象，序号为 &#34; + i);
+</span></span><span class=line><span class=cl>        // sleep 100 ms
+</span></span><span class=line><span class=cl>}
+</span></span></code></pre></td></tr></table></div></div><blockquote><ul><li>首先通过jps查看进程PID是2785，然后通过top -p 2785发现内存升高到28.1%。</li><li>多次使用jstat -gc 2785查看GC日志;发现OU的内存，也就是老年代的使用内存在一直增加，有对象一直处于存活，并且一直有新对象产生。接下来就通过堆栈储文件查看内存的使用情况。</li><li><strong>通过jmap -dump:format=b,file=height-cpu.bin 2785生产堆转储快照文件</strong>。使用Eclipse的内存分析器工具（<strong>MAT</strong>）打开height-cpu.bin文件进行堆内存分析</li><li>可以发现一个对象占了96%以上的内存。打开leak suspects页面，可以查看内存泄漏的原因 ; 点击详情可以查看具体的对象 &mldr;</li></ul></blockquote><h3 id=gc-统计>GC 统计</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>jstat -gc 452 1000 10 #每秒查询一次查询10次 (452进程id  1000ms) 
+</span></span><span class=line><span class=cl># 备注 ： s --&gt; Surive ; E --&gt; Eden , O --&gt; Old M --&gt; Metaspace 不是method  C --&gt; Capacity(容量) U--&gt; Used  Y--&gt; Young FGC--&gt; Full GC  
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>第一行表示在应用程序启动后第一次采样时，各个内存区域和垃圾回收的情况。
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>例如，你可以看到：
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>S0C是0.0，表示survivor space 0没有分配任何空间；
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>S1C是4096.0，表示survivor space 1分配了4096 KB的空间；
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>S0U是0.0，表示survivor space 0没有使用任何空间；
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>S1U是4096.0，表示survivor space 1已经使用了全部空间；
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>EC是309248.0，表示eden space分配了309248 KB的空间；
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>EU是236544.0，表示eden space已经使用了236544 KB的空间；
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>OC是183296.0，表示old space分配了183296 KB的空间；
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>OU是125409.0，表示old space已经使用了125409 KB的空间；
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>MC是140168.0，表示metaspace分配了140168 KB的空间；
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>MU是135553.7，表示metaspace已经使用了135553.7 KB的空间；
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>CCSC是15488.0，表示compressed class space分配了15488 KB的空间；
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>CCSU是13814.7，表示compressed class space已经使用了13814.7 KB的空间；
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>YGC是236，表示从应用程序启动到采样时发生了236次young generation垃圾回收；
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>YGCT是3.545，表示从应用程序启动到采样时young generation垃圾回收花费了3.545秒；
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>FGC是0，表示从应用程序启动到采样时没有发生full GC；
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>FGCT是0.000，表示从应用程序启动到采样时full GC花费了0秒；
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>CGC是12，表示从应用程序启动到采样时发生了12次concurrent GC；
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>CGCT是0.188，表示从应用程序启动到采样时concurrent GC花费了0.188秒；
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>GCT是3.733，表示从应用程序启动到采样时垃圾回收花费了总共3.733秒。
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>* The jstat Command - Oracle. https://docs.oracle.com/en/java/javase/14/docs/specs/man/jstat.html 
+</span></span></code></pre></td></tr></table></div></div><h3 id=堆内存统计>堆内存统计</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>jstat -gccapacity 452
+</span></span><span class=line><span class=cl>NGCMN：新生代最小容量
+</span></span><span class=line><span class=cl>NGCMX：新生代最大容量
+</span></span><span class=line><span class=cl>NGC：当前新生代容量
+</span></span><span class=line><span class=cl>S0C：第一个幸存区大小
+</span></span><span class=line><span class=cl>S1C：第二个幸存区的大小
+</span></span><span class=line><span class=cl>EC：伊甸园区的大小
+</span></span><span class=line><span class=cl>OGCMN：老年代最小容量
+</span></span><span class=line><span class=cl>OGCMX：老年代最大容量
+</span></span><span class=line><span class=cl>OGC：当前老年代大小
+</span></span><span class=line><span class=cl>OC:当前老年代大小
+</span></span><span class=line><span class=cl>MCMN:最小元数据容量
+</span></span><span class=line><span class=cl>MCMX：最大元数据容量
+</span></span><span class=line><span class=cl>MC：当前元数据空间大小
+</span></span><span class=line><span class=cl>CCSMN：最小压缩类空间大小
+</span></span><span class=line><span class=cl>CCSMX：最大压缩类空间大小
+</span></span><span class=line><span class=cl>CCSC：当前压缩类空间大小
+</span></span><span class=line><span class=cl>YGC：年轻代gc次数
+</span></span><span class=line><span class=cl>FGC：老年代GC次数
+</span></span><span class=line><span class=cl>CGC:
+</span></span></code></pre></td></tr></table></div></div><h2 id=10redis数据结构>10、redis数据结构?</h2><ul><li>string(字符串)、list(列表)、hash(字典)、set(集合) 、 zset(有序集合)和 Stream(流)</li><li>zset(有序集合)的内部实现用的是一种叫做 <strong>「跳跃表」</strong> 的数据结构</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>typedef struct dictht {
+</span></span><span class=line><span class=cl>    // 哈希表数组
+</span></span><span class=line><span class=cl>    dictEntry **table;
+</span></span><span class=line><span class=cl>    // 哈希表大小
+</span></span><span class=line><span class=cl>    unsigned long size;
+</span></span><span class=line><span class=cl>    // 哈希表大小掩码，用于计算索引值，总是等于 size - 1
+</span></span><span class=line><span class=cl>    unsigned long sizemask;
+</span></span><span class=line><span class=cl>    // 该哈希表已有节点的数量
+</span></span><span class=line><span class=cl>    unsigned long used;
+</span></span><span class=line><span class=cl>} dictht;
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>typedef struct dict {
+</span></span><span class=line><span class=cl>    dictType *type;
+</span></span><span class=line><span class=cl>    void *privdata;
+</span></span><span class=line><span class=cl>    // 内部有两个 dictht 结构
+</span></span><span class=line><span class=cl>    dictht ht[2];
+</span></span><span class=line><span class=cl>    long rehashidx; /* rehashing not in progress if rehashidx == -1 */
+</span></span><span class=line><span class=cl>    unsigned long iterators; /* number of iterators currently running */
+</span></span><span class=line><span class=cl>} dict;
+</span></span></code></pre></td></tr></table></div></div><ul><li>可以从上面的源码中看到，实际上字典结构的内部包含两个 hashtable，通常情况下只有一个 hashtable 是有值的，但是在字典扩容缩容时，需要分配新的 hashtable，然后进行 渐进式搬迁; 大字典的扩容是比较耗时间的，需要重新申请新的数组，然后将旧字典所有链表中的元素重新挂接到新的数组下面，这是一个 O(n) 级别的操作，作为单线程的 Redis 很难承受这样耗时的过程，所以 <strong>Redis 使用 渐进式 rehash 小步搬迁</strong></li><li>Stream 类型</li></ul><blockquote><p><strong>Redis5.0带来了Stream类型</strong>。从字面上看是流类型，但其实从功能上看，应该是Redis对消息队列（MQ，Message Queue）的完善实现。用过Redis做消息队列的都了解，基于Reids的消息队列实现有很多种，例如：
+PUB/SUB，订阅/发布模式
+基于List的 LPUSH+BRPOP 的实现
+基于Sorted-Set的实现
+Redis Stream的结构如上图所示，它有一个消息链表，将所有加入的消息都串起来，每个消息都有一个唯一的ID和对应的内容。消息是持久化的，Redis重启后，内容还在
+用来实现典型的消息队列。该Stream类型的出现，几乎满足了消息队列具备的全部内容</p></blockquote><ul><li>参考 ： <a href=https://cloud.tencent.com/developer/article/1667574 target=_blank rel="noopener noreffer">https://cloud.tencent.com/developer/article/1667574</a></li></ul><h2 id=11说下mysqlinnodb索引数据结构>11、说下mysqlinnodb索引数据结构?</h2><h2 id=12说下模板模式在spring-ioc的应用>12、说下模板模式在Spring IoC的应用</h2><h2 id=13mysql事务有哪些默认事务是什么>13、mysql事务有哪些?默认事务是什么?</h2><h2 id=14说下kafka生产者消费者整套流程生产者批量提交配置项目是如何配>14、说下kafka生产者、消费者整套流程?生产者批量提交配置，项目是如何配</h2><h2 id=16zk的特性-zk实现注册中心的原理服务提供者挂了zk会怎么样>16、zk的特性? zk实现注册中心的原理?服务提供者挂了，zk会怎么样?</h2><h2 id=17说下mysql都有哪些日志文件每个文件的作用是什么>17、说下mysql都有哪些日志文件?每个文件的作用是什么?</h2><h2 id=18说下mysql-数据结构文件有哪些>18、说下mysql 数据结构文件有哪些?</h2><h2 id=19说下kafka都有哪些核心文件>19、说下kafka都有哪些核心文件?</h2><h2 id=20说下redission分布式锁的实现原理>20、说下redission分布式锁的实现原理?</h2><h2 id=21说下lru算法的实现>21、说下lru算法的实现?</h2><h3 id=1-利用linkedhashmap实现lru算法>1 利用LinkedHashMap实现LRU算法</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm> * 利用LinkedHashMap实现的原理：
+</span></span></span><span class=line><span class=cl><span class=cm> *
+</span></span></span><span class=line><span class=cl><span class=cm> * get 能取到元素方法，会执行 ：afterNodeAccess(Node&lt;K,V&gt; e)  方法；move node to last； 前提 accessOrder 要设置为true
+</span></span></span><span class=line><span class=cl><span class=cm> * 默认是false； 所以LRUCache构造方法要调用
+</span></span></span><span class=line><span class=cl><span class=cm> * public LinkedHashMap(int initialCapacity,float loadFactor,boolean accessOrder) {
+</span></span></span><span class=line><span class=cl><span class=cm> *         super(initialCapacity, loadFactor);
+</span></span></span><span class=line><span class=cl><span class=cm> *         this.accessOrder = accessOrder;
+</span></span></span><span class=line><span class=cl><span class=cm> *     }
+</span></span></span><span class=line><span class=cl><span class=cm> * put方法添加新元素成功后调用 void afterNodeInsertion(boolean evict)： // possibly remove eldest:
+</span></span></span><span class=line><span class=cl><span class=cm> * afterNodeInsertion会 possibly remove eldest （从头部移除；前提：removeEldestEntry 返回true）
+</span></span></span><span class=line><span class=cl><span class=cm> * 实际是 在HashMap中实现 ： 最后一个参数evict为true会执行移除最久为使用的
+</span></span></span><span class=line><span class=cl><span class=cm> * public V put(K key, V value) {
+</span></span></span><span class=line><span class=cl><span class=cm> *         return putVal(hash(key), key, value, false, true);
+</span></span></span><span class=line><span class=cl><span class=cm> *     }
+</span></span></span><span class=line><span class=cl><span class=cm> * @param &lt;K&gt;
+</span></span></span><span class=line><span class=cl><span class=cm> * @param &lt;V&gt;
+</span></span></span><span class=line><span class=cl><span class=cm> */</span>
+</span></span><span class=line><span class=cl><span class=kd>class</span>  <span class=nc>LRUCache</span><span class=o>&lt;</span><span class=n>K</span><span class=o>,</span><span class=n>V</span><span class=o>&gt;</span> <span class=kd>extends</span> <span class=n>LinkedHashMap</span><span class=o>&lt;</span><span class=n>K</span><span class=o>,</span><span class=n>V</span><span class=o>&gt;</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>private</span> <span class=kt>int</span> <span class=n>capacity</span> <span class=o>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm>     * LinkedHashMap 的构造方法中， accessOrder = false; 代表访问序
+</span></span></span><span class=line><span class=cl><span class=cm>     * @param capacity
+</span></span></span><span class=line><span class=cl><span class=cm>     * @param loadFactor
+</span></span></span><span class=line><span class=cl><span class=cm>     */</span>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=nf>LRUCache</span><span class=o>(</span> <span class=kt>int</span> <span class=n>capacity</span><span class=o>,</span><span class=kt>float</span> <span class=n>loadFactor</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=kd>super</span><span class=o>(</span><span class=n>capacity</span><span class=o>,</span> <span class=n>loadFactor</span><span class=o>,</span><span class=kc>true</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>        <span class=k>this</span><span class=o>.</span><span class=na>capacity</span> <span class=o>=</span> <span class=n>capacity</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=nf>LRUCache</span><span class=o>(</span><span class=kt>int</span> <span class=n>capacity</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=kd>super</span><span class=o>(</span><span class=n>capacity</span><span class=o>,</span> <span class=mf>0.75F</span><span class=o>,</span><span class=kc>true</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>        <span class=k>this</span><span class=o>.</span><span class=na>capacity</span> <span class=o>=</span> <span class=n>capacity</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm>     *  容量不够时移除； LinkedHashMap是直接返回false，不移除
+</span></span></span><span class=line><span class=cl><span class=cm>     * @return
+</span></span></span><span class=line><span class=cl><span class=cm>     */</span>
+</span></span><span class=line><span class=cl>    <span class=nd>@Override</span>
+</span></span><span class=line><span class=cl>    <span class=kd>protected</span> <span class=kt>boolean</span> <span class=nf>removeEldestEntry</span><span class=o>(</span><span class=n>Map</span><span class=o>.</span><span class=na>Entry</span><span class=o>&lt;</span><span class=n>K</span><span class=o>,</span> <span class=n>V</span><span class=o>&gt;</span> <span class=n>eldest</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=kd>super</span><span class=o>.</span><span class=na>size</span><span class=o>()</span> <span class=o>&gt;</span> <span class=k>this</span><span class=o>.</span><span class=na>capacity</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=2-哈希表双向链表实现>2 哈希表+双向链表实现</h3><ul><li>定义 size，capacity，cache（hashmap 哈希表实现，Map&lt;K,Node> cache ;）</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>  1
+</span><span class=lnt>  2
+</span><span class=lnt>  3
+</span><span class=lnt>  4
+</span><span class=lnt>  5
+</span><span class=lnt>  6
+</span><span class=lnt>  7
+</span><span class=lnt>  8
+</span><span class=lnt>  9
+</span><span class=lnt> 10
+</span><span class=lnt> 11
+</span><span class=lnt> 12
+</span><span class=lnt> 13
+</span><span class=lnt> 14
+</span><span class=lnt> 15
+</span><span class=lnt> 16
+</span><span class=lnt> 17
+</span><span class=lnt> 18
+</span><span class=lnt> 19
+</span><span class=lnt> 20
+</span><span class=lnt> 21
+</span><span class=lnt> 22
+</span><span class=lnt> 23
+</span><span class=lnt> 24
+</span><span class=lnt> 25
+</span><span class=lnt> 26
+</span><span class=lnt> 27
+</span><span class=lnt> 28
+</span><span class=lnt> 29
+</span><span class=lnt> 30
+</span><span class=lnt> 31
+</span><span class=lnt> 32
+</span><span class=lnt> 33
+</span><span class=lnt> 34
+</span><span class=lnt> 35
+</span><span class=lnt> 36
+</span><span class=lnt> 37
+</span><span class=lnt> 38
+</span><span class=lnt> 39
+</span><span class=lnt> 40
+</span><span class=lnt> 41
+</span><span class=lnt> 42
+</span><span class=lnt> 43
+</span><span class=lnt> 44
+</span><span class=lnt> 45
+</span><span class=lnt> 46
+</span><span class=lnt> 47
+</span><span class=lnt> 48
+</span><span class=lnt> 49
+</span><span class=lnt> 50
+</span><span class=lnt> 51
+</span><span class=lnt> 52
+</span><span class=lnt> 53
+</span><span class=lnt> 54
+</span><span class=lnt> 55
+</span><span class=lnt> 56
+</span><span class=lnt> 57
+</span><span class=lnt> 58
+</span><span class=lnt> 59
+</span><span class=lnt> 60
+</span><span class=lnt> 61
+</span><span class=lnt> 62
+</span><span class=lnt> 63
+</span><span class=lnt> 64
+</span><span class=lnt> 65
+</span><span class=lnt> 66
+</span><span class=lnt> 67
+</span><span class=lnt> 68
+</span><span class=lnt> 69
+</span><span class=lnt> 70
+</span><span class=lnt> 71
+</span><span class=lnt> 72
+</span><span class=lnt> 73
+</span><span class=lnt> 74
+</span><span class=lnt> 75
+</span><span class=lnt> 76
+</span><span class=lnt> 77
+</span><span class=lnt> 78
+</span><span class=lnt> 79
+</span><span class=lnt> 80
+</span><span class=lnt> 81
+</span><span class=lnt> 82
+</span><span class=lnt> 83
+</span><span class=lnt> 84
+</span><span class=lnt> 85
+</span><span class=lnt> 86
+</span><span class=lnt> 87
+</span><span class=lnt> 88
+</span><span class=lnt> 89
+</span><span class=lnt> 90
+</span><span class=lnt> 91
+</span><span class=lnt> 92
+</span><span class=lnt> 93
+</span><span class=lnt> 94
+</span><span class=lnt> 95
+</span><span class=lnt> 96
+</span><span class=lnt> 97
+</span><span class=lnt> 98
+</span><span class=lnt> 99
+</span><span class=lnt>100
+</span><span class=lnt>101
+</span><span class=lnt>102
+</span><span class=lnt>103
+</span><span class=lnt>104
+</span><span class=lnt>105
+</span><span class=lnt>106
+</span><span class=lnt>107
+</span><span class=lnt>108
+</span><span class=lnt>109
+</span><span class=lnt>110
+</span><span class=lnt>111
+</span><span class=lnt>112
+</span><span class=lnt>113
+</span><span class=lnt>114
+</span><span class=lnt>115
+</span><span class=lnt>116
+</span><span class=lnt>117
+</span><span class=lnt>118
+</span><span class=lnt>119
+</span><span class=lnt>120
+</span><span class=lnt>121
+</span><span class=lnt>122
+</span><span class=lnt>123
+</span><span class=lnt>124
+</span><span class=lnt>125
+</span><span class=lnt>126
+</span><span class=lnt>127
+</span><span class=lnt>128
+</span><span class=lnt>129
+</span><span class=lnt>130
+</span><span class=lnt>131
+</span><span class=lnt>132
+</span><span class=lnt>133
+</span><span class=lnt>134
+</span><span class=lnt>135
+</span><span class=lnt>136
+</span><span class=lnt>137
+</span><span class=lnt>138
+</span><span class=lnt>139
+</span><span class=lnt>140
+</span><span class=lnt>141
+</span><span class=lnt>142
+</span><span class=lnt>143
+</span><span class=lnt>144
+</span><span class=lnt>145
+</span><span class=lnt>146
+</span><span class=lnt>147
+</span><span class=lnt>148
+</span><span class=lnt>149
+</span><span class=lnt>150
+</span><span class=lnt>151
+</span><span class=lnt>152
+</span><span class=lnt>153
+</span><span class=lnt>154
+</span><span class=lnt>155
+</span><span class=lnt>156
+</span><span class=lnt>157
+</span><span class=lnt>158
+</span><span class=lnt>159
+</span><span class=lnt>160
+</span><span class=lnt>161
+</span><span class=lnt>162
+</span><span class=lnt>163
+</span><span class=lnt>164
+</span><span class=lnt>165
+</span><span class=lnt>166
+</span><span class=lnt>167
+</span><span class=lnt>168
+</span><span class=lnt>169
+</span><span class=lnt>170
+</span><span class=lnt>171
+</span><span class=lnt>172
+</span><span class=lnt>173
+</span><span class=lnt>174
+</span><span class=lnt>175
+</span><span class=lnt>176
+</span><span class=lnt>177
+</span><span class=lnt>178
+</span><span class=lnt>179
+</span><span class=lnt>180
+</span><span class=lnt>181
+</span><span class=lnt>182
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kn>package</span> <span class=nn>com.example.demo</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kn>import</span> <span class=nn>java.util.HashMap</span><span class=o>;</span>
+</span></span><span class=line><span class=cl><span class=kn>import</span> <span class=nn>java.util.Map</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=kd>public</span> <span class=kd>class</span> <span class=nc>LRUCache</span><span class=o>&lt;</span><span class=n>K</span><span class=o>,</span> <span class=n>V</span><span class=o>&gt;</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>private</span> <span class=kt>int</span> <span class=n>size</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>private</span> <span class=kt>int</span> <span class=n>capacity</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm>     * 存储数据
+</span></span></span><span class=line><span class=cl><span class=cm>     */</span>
+</span></span><span class=line><span class=cl>    <span class=kd>private</span> <span class=n>Map</span><span class=o>&lt;</span><span class=n>K</span><span class=o>,</span> <span class=n>Node</span><span class=o>&gt;</span> <span class=n>cache</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm>     * 标识作用，虚拟节点，辅助用，减少空判断,不存储具体的值
+</span></span></span><span class=line><span class=cl><span class=cm>     */</span>
+</span></span><span class=line><span class=cl>    <span class=kd>private</span> <span class=n>Node</span> <span class=n>header</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm>     * 标识作用，不存储具体的值
+</span></span></span><span class=line><span class=cl><span class=cm>     */</span>
+</span></span><span class=line><span class=cl>    <span class=kd>private</span> <span class=n>Node</span> <span class=n>tail</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=nf>LRUCache</span><span class=o>()</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>this</span><span class=o>(</span><span class=mi>16</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=nf>LRUCache</span><span class=o>(</span><span class=kt>int</span> <span class=n>capacity</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>this</span><span class=o>.</span><span class=na>capacity</span> <span class=o>=</span> <span class=n>capacity</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>        <span class=k>this</span><span class=o>.</span><span class=na>cache</span> <span class=o>=</span> <span class=k>new</span> <span class=n>HashMap</span><span class=o>&lt;&gt;(</span><span class=n>capacity</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>        <span class=k>this</span><span class=o>.</span><span class=na>header</span> <span class=o>=</span> <span class=k>new</span> <span class=n>Node</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>        <span class=k>this</span><span class=o>.</span><span class=na>tail</span> <span class=o>=</span> <span class=k>new</span> <span class=n>Node</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>        <span class=k>this</span><span class=o>.</span><span class=na>header</span><span class=o>.</span><span class=na>next</span> <span class=o>=</span> <span class=k>this</span><span class=o>.</span><span class=na>tail</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>        <span class=k>this</span><span class=o>.</span><span class=na>tail</span><span class=o>.</span><span class=na>prev</span> <span class=o>=</span> <span class=k>this</span><span class=o>.</span><span class=na>header</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm>     * 能访问到元素需要将原来的元素移动到末尾，标识最近访问
+</span></span></span><span class=line><span class=cl><span class=cm>     *
+</span></span></span><span class=line><span class=cl><span class=cm>     * @param k
+</span></span></span><span class=line><span class=cl><span class=cm>     * @return
+</span></span></span><span class=line><span class=cl><span class=cm>     */</span>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=n>V</span> <span class=nf>get</span><span class=o>(</span><span class=n>K</span> <span class=n>k</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>Node</span> <span class=n>node</span> <span class=o>=</span> <span class=n>cache</span><span class=o>.</span><span class=na>get</span><span class=o>(</span><span class=n>k</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=o>(</span><span class=n>node</span> <span class=o>==</span> <span class=kc>null</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=kc>null</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>        <span class=n>node</span><span class=o>.</span><span class=na>moveToLast</span><span class=o>(</span><span class=n>node</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>node</span><span class=o>.</span><span class=na>v</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm>     * &lt;p&gt;1 加入的元素放到末尾，放之前先判断是否存在同样的元素，存在则修改前后指针。&lt;/p&gt;
+</span></span></span><span class=line><span class=cl><span class=cm>     * &lt;p&gt; 2 不存在即就是新加入的元素，判断超过容量限制来决定删除头部元素 &lt;/p&gt;
+</span></span></span><span class=line><span class=cl><span class=cm>     *
+</span></span></span><span class=line><span class=cl><span class=cm>     * @param k
+</span></span></span><span class=line><span class=cl><span class=cm>     * @param v
+</span></span></span><span class=line><span class=cl><span class=cm>     */</span>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>put</span><span class=o>(</span><span class=n>K</span> <span class=n>k</span><span class=o>,</span> <span class=n>V</span> <span class=n>v</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>Node</span> <span class=n>node</span> <span class=o>=</span> <span class=n>cache</span><span class=o>.</span><span class=na>get</span><span class=o>(</span><span class=n>k</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=o>(</span><span class=n>node</span> <span class=o>==</span> <span class=kc>null</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>node</span> <span class=o>=</span> <span class=k>new</span> <span class=n>Node</span><span class=o>(</span><span class=n>k</span><span class=o>,</span><span class=n>v</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>            <span class=n>cache</span><span class=o>.</span><span class=na>put</span><span class=o>(</span><span class=n>k</span><span class=o>,</span><span class=n>node</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>            <span class=n>size</span><span class=o>++;</span>
+</span></span><span class=line><span class=cl>            <span class=n>node</span><span class=o>.</span><span class=na>addToLast</span><span class=o>(</span><span class=n>node</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>            <span class=k>if</span><span class=o>(</span><span class=n>size</span> <span class=o>&gt;</span> <span class=n>capacity</span><span class=o>){</span>
+</span></span><span class=line><span class=cl>                <span class=c1>//删除头部
+</span></span></span><span class=line><span class=cl><span class=c1></span>                <span class=n>Node</span> <span class=n>first</span> <span class=o>=</span> <span class=n>node</span><span class=o>.</span><span class=na>removeFirst</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>                <span class=n>cache</span><span class=o>.</span><span class=na>remove</span><span class=o>(</span><span class=n>first</span><span class=o>.</span><span class=na>k</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>                <span class=n>size</span> <span class=o>--</span> <span class=o>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>            <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=o>}</span><span class=k>else</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>node</span><span class=o>.</span><span class=na>v</span> <span class=o>=</span> <span class=n>v</span> <span class=o>;</span>
+</span></span><span class=line><span class=cl>            <span class=n>node</span><span class=o>.</span><span class=na>moveToLast</span><span class=o>(</span><span class=n>node</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm>     * 必须是非静态的类才能使用外部类的泛型和使用外部类的变量tail和header
+</span></span></span><span class=line><span class=cl><span class=cm>     */</span>
+</span></span><span class=line><span class=cl>    <span class=kd>class</span>  <span class=nc>Node</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>K</span> <span class=n>k</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>        <span class=n>V</span> <span class=n>v</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm>         * 前驱节点
+</span></span></span><span class=line><span class=cl><span class=cm>         */</span>
+</span></span><span class=line><span class=cl>        <span class=n>Node</span> <span class=n>prev</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=n>Node</span> <span class=n>next</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=kd>public</span> <span class=nf>Node</span><span class=o>()</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=kd>public</span> <span class=nf>Node</span><span class=o>(</span><span class=n>K</span> <span class=n>k</span><span class=o>,</span> <span class=n>V</span> <span class=n>v</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>            <span class=k>this</span><span class=o>.</span><span class=na>k</span> <span class=o>=</span> <span class=n>k</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>            <span class=k>this</span><span class=o>.</span><span class=na>v</span> <span class=o>=</span> <span class=n>v</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=kd>private</span> <span class=kt>void</span> <span class=nf>addToLast</span><span class=o>(</span><span class=n>Node</span> <span class=n>node</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>node</span><span class=o>.</span><span class=na>prev</span> <span class=o>=</span> <span class=n>tail</span><span class=o>.</span><span class=na>prev</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>            <span class=n>node</span><span class=o>.</span><span class=na>next</span> <span class=o>=</span> <span class=n>tail</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>            <span class=n>node</span><span class=o>.</span><span class=na>prev</span><span class=o>.</span><span class=na>next</span> <span class=o>=</span> <span class=n>node</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>            <span class=n>tail</span><span class=o>.</span><span class=na>prev</span> <span class=o>=</span> <span class=n>node</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=kd>private</span> <span class=kt>void</span> <span class=nf>addToFirst</span><span class=o>(</span><span class=n>Node</span> <span class=n>node</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>node</span><span class=o>.</span><span class=na>next</span> <span class=o>=</span> <span class=n>header</span><span class=o>.</span><span class=na>next</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>            <span class=n>node</span><span class=o>.</span><span class=na>prev</span> <span class=o>=</span> <span class=n>header</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>            <span class=n>node</span><span class=o>.</span><span class=na>next</span><span class=o>.</span><span class=na>prev</span> <span class=o>=</span> <span class=n>node</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>            <span class=n>header</span><span class=o>.</span><span class=na>next</span> <span class=o>=</span> <span class=n>node</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=kd>private</span> <span class=kt>void</span> <span class=nf>moveToLast</span><span class=o>(</span><span class=n>Node</span> <span class=n>node</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>             <span class=n>remove</span><span class=o>(</span><span class=n>node</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>             <span class=n>addToLast</span><span class=o>(</span><span class=n>node</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=kd>private</span> <span class=kt>void</span> <span class=nf>moveToFirst</span><span class=o>(</span><span class=n>Node</span> <span class=n>node</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>remove</span><span class=o>(</span><span class=n>node</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>            <span class=n>addToFirst</span><span class=o>(</span><span class=n>node</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=kd>private</span> <span class=n>Node</span> <span class=nf>remove</span><span class=o>(</span><span class=n>Node</span> <span class=n>node</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>            <span class=k>if</span> <span class=o>(</span><span class=n>node</span> <span class=o>==</span> <span class=kc>null</span><span class=o>)</span> <span class=k>return</span> <span class=kc>null</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>            <span class=k>if</span> <span class=o>(</span><span class=n>node</span><span class=o>.</span><span class=na>prev</span> <span class=o>==</span> <span class=kc>null</span> <span class=o>||</span> <span class=n>node</span><span class=o>.</span><span class=na>next</span> <span class=o>==</span> <span class=kc>null</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>                <span class=k>return</span> <span class=n>node</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>            <span class=o>}</span>
+</span></span><span class=line><span class=cl>            <span class=n>node</span><span class=o>.</span><span class=na>prev</span><span class=o>.</span><span class=na>next</span> <span class=o>=</span> <span class=n>node</span><span class=o>.</span><span class=na>next</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>            <span class=n>node</span><span class=o>.</span><span class=na>next</span><span class=o>.</span><span class=na>prev</span> <span class=o>=</span> <span class=n>node</span><span class=o>.</span><span class=na>prev</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>            <span class=n>node</span><span class=o>.</span><span class=na>next</span> <span class=o>=</span> <span class=kc>null</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>            <span class=n>node</span><span class=o>.</span><span class=na>prev</span> <span class=o>=</span> <span class=kc>null</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=n>node</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=kd>private</span> <span class=n>Node</span> <span class=nf>removeFirst</span><span class=o>()</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>Node</span> <span class=n>h</span> <span class=o>=</span> <span class=n>header</span><span class=o>.</span><span class=na>next</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>            <span class=k>return</span> <span class=n>remove</span><span class=o>(</span><span class=n>h</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=kd>private</span> <span class=n>Node</span> <span class=nf>removeLast</span><span class=o>()</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>Node</span> <span class=n>t</span> <span class=o>=</span> <span class=n>tail</span><span class=o>.</span><span class=na>prev</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>           <span class=k>return</span>  <span class=n>remove</span><span class=o>(</span><span class=n>t</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=kd>static</span> <span class=kt>void</span> <span class=nf>main</span><span class=o>(</span><span class=n>String</span><span class=o>[]</span> <span class=n>args</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>LRUCache</span><span class=o>&lt;</span><span class=n>Integer</span><span class=o>,</span> <span class=n>Integer</span><span class=o>&gt;</span> <span class=n>lruCache</span> <span class=o>=</span> <span class=k>new</span> <span class=n>LRUCache</span><span class=o>&lt;&gt;(</span><span class=mi>10</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>        <span class=k>for</span> <span class=o>(</span><span class=kt>int</span> <span class=n>i</span> <span class=o>=</span> <span class=mi>0</span><span class=o>;</span> <span class=n>i</span> <span class=o>&lt;</span> <span class=mi>20</span><span class=o>;</span> <span class=n>i</span><span class=o>++)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>            <span class=c1>// 1 会一直在
+</span></span></span><span class=line><span class=cl><span class=c1></span>            <span class=n>lruCache</span><span class=o>.</span><span class=na>put</span><span class=o>(</span><span class=mi>1</span><span class=o>,</span><span class=mi>1</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>            <span class=n>lruCache</span><span class=o>.</span><span class=na>put</span><span class=o>(</span><span class=n>i</span><span class=o>,</span><span class=n>i</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>        <span class=k>for</span> <span class=o>(</span><span class=kt>int</span> <span class=n>i</span> <span class=o>=</span> <span class=mi>18</span><span class=o>;</span> <span class=n>i</span> <span class=o>&gt;</span> <span class=mi>12</span><span class=o>;</span> <span class=n>i</span><span class=o>--)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>            <span class=n>lruCache</span><span class=o>.</span><span class=na>put</span><span class=o>(</span><span class=n>i</span><span class=o>,</span><span class=n>i</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>        <span class=k>for</span> <span class=o>(</span><span class=kt>int</span> <span class=n>i</span> <span class=o>=</span> <span class=mi>0</span> <span class=o>;</span> <span class=n>i</span><span class=o>&lt;</span> <span class=mi>20</span><span class=o>;</span> <span class=n>i</span><span class=o>++){</span>
+</span></span><span class=line><span class=cl>            <span class=n>System</span><span class=o>.</span><span class=na>out</span><span class=o>.</span><span class=na>print</span><span class=o>(</span><span class=n>lruCache</span><span class=o>.</span><span class=na>get</span><span class=o>(</span><span class=n>i</span><span class=o>)</span> <span class=o>+</span> <span class=s>&#34; &#34;</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>        <span class=o>}</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div></div><script src=https://cdn.jsdelivr.net/gh/jmnote/plantuml-encoder@1.2.4/dist/plantuml-encoder.min.js integrity="sha256-Qsk2KRBCN5qVZX7B+8+2IvQl1Aqc723qV1tBCQaVoqo=" crossorigin=anonymous></script>
+<script>(function(){let e="language-";Array.prototype.forEach.call(document.querySelectorAll("[class^="+e+"]"),function(e){if(console.info(e),e.innerText.indexOf("startuml")>0){console.log("is plantuml:"+e.innerText);let t=document.createElement("IMG");t.loading="lazy",t.src="http://www.plantuml.com/plantuml/svg/~1"+plantumlEncoder.encode(e.innerText),e.parentNode.parentNode.insertBefore(t,e.parentNode),e.style.display="none"}else console.log("not plantuml")})})()</script><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>Updated on 2023-09-11</span></div></div><div class=post-info-line><div class=post-info-md></div><div class=post-info-share><span><a href=javascript:void(0); title="Share on Twitter" data-sharer=twitter data-url=http://example.org/yifeng_20230911/ data-title=Yifeng_20230911 data-hashtags=interview><i class="fab fa-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Facebook" data-sharer=facebook data-url=http://example.org/yifeng_20230911/ data-hashtag=interview><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Hacker News" data-sharer=hackernews data-url=http://example.org/yifeng_20230911/ data-title=Yifeng_20230911><i class="fab fa-hacker-news fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Line" data-sharer=line data-url=http://example.org/yifeng_20230911/ data-title=Yifeng_20230911><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg aria-hidden=true></i></a><a href=javascript:void(0); title="Share on 微博" data-sharer=weibo data-url=http://example.org/yifeng_20230911/ data-title=Yifeng_20230911><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a></span></div></div></div><div class=post-info-more><section class=post-tags><i class="fas fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/tags/interview/>interview</a></section><section><span><a href=javascript:void(0); onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span></section></div><div class=post-nav><a href=/after-package-xlsx-cannot-open/ class=prev rel=prev title=" After maven package Xlsx Cannot Open"><i class="fas fa-angle-left fa-fw" aria-hidden=true></i> After maven package Xlsx Cannot Open</a>
+<a href=/dfs_bfs/ class=next rel=next title=DFS_BFS>DFS_BFS<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.114.0">Hugo</a> | Theme - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden=true></i> LoveIt</a></div><div class=footer-line itemscope itemtype=http://schema.org/CreativeWork><i class="far fa-copyright fa-fw" aria-hidden=true></i><span itemprop=copyrightYear>2021 - 2023</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>Itlaohuo</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title="Back to Top"><i class="fas fa-arrow-up fa-fw" aria-hidden=true></i>
+</a><a href=# id=view-comments class=fixed-button title="View Comments"><i class="fas fa-comment fa-fw" aria-hidden=true></i></a></div><script type=text/javascript src=https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:50},comment:{},search:{highlightTag:"em",lunrIndexURL:"/index.json",maxResultLength:10,noResultsFound:"No results found",snippetLength:30,type:"lunr"}}</script><script type=text/javascript src=/js/theme.min.js></script></body></html>
