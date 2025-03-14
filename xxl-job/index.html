@@ -1,0 +1,573 @@
+<!doctype html><html lang=zh-cn><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><title>Xxl Job - Itlaohuo</title><meta name=Description content="Itlaohuo的博客"><meta property="og:title" content="Xxl Job"><meta property="og:description" content><meta property="og:type" content="article"><meta property="og:url" content="http://example.org/xxl-job/"><meta property="og:image" content="http://example.org/img/Kubenetes.assets/image-20200404094800622.png"><meta property="article:section" content="posts"><meta property="article:published_time" content="2021-09-07T15:26:13+08:00"><meta property="article:modified_time" content="2021-09-07T15:26:13+08:00"><meta property="og:site_name" content="Itlaohuo的博客"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="http://example.org/img/Kubenetes.assets/image-20200404094800622.png"><meta name=twitter:title content="Xxl Job"><meta name=twitter:description content><meta name=application-name content="Itlaohuo的博客"><meta name=apple-mobile-web-app-title content="Itlaohuo的博客"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=http://example.org/xxl-job/><link rel=prev href=http://example.org/books/><link rel=next href=http://example.org/inventory-core-sharding-design/><link rel=stylesheet href=/css/style.min.css><link rel=preload href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css></noscript><link rel=preload href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Xxl Job","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/example.org\/xxl-job\/"},"genre":"posts","wordcount":3358,"url":"http:\/\/example.org\/xxl-job\/","datePublished":"2021-09-07T15:26:13+08:00","dateModified":"2021-09-07T15:26:13+08:00","publisher":{"@type":"Organization","name":""},"author":{"@type":"Person","name":"itlaohuo"},"description":""}</script></head><body data-header-desktop=fixed data-header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"auto"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"auto"==="dark")&&document.body.setAttribute("theme","dark")</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title=Itlaohuo>Itlaohuo</a></div><div class=menu><div class=menu-inner><a class=menu-item href=/posts/>文章 </a><a class=menu-item href=/tags/>标签 </a><a class=menu-item href=/categories/>分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<input type=text placeholder="Search titles or contents..." id=search-input-desktop>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=Search><i class="fas fa-search fa-fw" aria-hidden=true></i></a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=Clear><i class="fas fa-times-circle fa-fw" aria-hidden=true></i></a>
+<span class="search-button search-loading" id=search-loading-desktop><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span>
+</span><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme"><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title=Itlaohuo>Itlaohuo</a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><div class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder="Search titles or contents..." id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=Search><i class="fas fa-search fa-fw" aria-hidden=true></i></a>
+<a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=Clear><i class="fas fa-times-circle fa-fw" aria-hidden=true></i></a>
+<span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>Cancel</a></div><a class=menu-item href=/posts/ title>文章</a><a class=menu-item href=/tags/ title>标签</a><a class=menu-item href=/categories/ title>分类</a><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title>Contents</h2><div class=toc-content id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Xxl Job</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>itlaohuo</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2021-09-07>2021-09-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;3358 words&nbsp;
+<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;7 minutes&nbsp;</div></div><div class="details toc" id=toc-static data-kept><div class="details-summary toc-title"><span>Contents</span>
+<span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><a href=#前言>前言</a></li><li><a href=#准备>准备</a></li><li><a href=#工程目录结构分析>工程目录结构分析</a></li><li><a href=#调度中心启动流程分析>调度中心启动流程分析</a><ul><li><a href=#xxljobschedulerinit方法主要做了如下几件事>xxlJobScheduler.init()方法主要做了如下几件事</a></li><li><a href=#触发器线程池创建>触发器线程池创建</a></li><li><a href=#注册监控器启动>注册监控器启动</a></li><li><a href=#失败监控器启动>失败监控器启动</a></li><li><a href=#丢失掉线监控器启动>丢失(掉线)监控器启动</a></li><li><a href=#日志任务启动>日志任务启动</a></li></ul></li></ul></nav></div></div><div class=content id=content><h2 id=前言>前言</h2><p>在此之前对于xxl-job仅仅限于使用级别，对其底层实现一无所知，闲来无事，翻翻源码研究一下</p><h2 id=准备>准备</h2><ul><li>xxl-job-V2.3.0版本源码下载;<a href=https://github.com/xuxueli/xxl-job target=_blank rel="noopener noreffer">github源码仓库</a> <a href=http://gitee.com/xuxueli0323/xxl-job target=_blank rel="noopener noreffer">gitee源码仓库</a></li><li>阅读<a href=https://github.com/xuxueli/xxl-job/blob/2.3.0/doc/XXL-JOB%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3.md target=_blank rel="noopener noreffer">官方文档</a></li><li>根据官方文档、启动代码</li></ul><h2 id=工程目录结构分析>工程目录结构分析</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>doc:官方文档
+</span></span><span class=line><span class=cl>xxl-job-admin：调度中心
+</span></span><span class=line><span class=cl>xxl-job-core：公共依赖
+</span></span><span class=line><span class=cl>xxl-job-executor-samples：执行器Sample示例（选择合适的版本执行器，可直接使用，也可以参考其并将现有项目改造成执行器）
+</span></span><span class=line><span class=cl>    ：xxl-job-executor-sample-springboot：Springboot版本，通过Springboot管理执行器，推荐这种方式；
+</span></span><span class=line><span class=cl>    ：xxl-job-executor-sample-frameless：无框架版本；
+</span></span></code></pre></td></tr></table></div></div><p><strong>xxl-job-admin模块是调度中心，统一管理任务调度平台上调度任务，负责触发调度执行，并且提供任务管理平台。</strong></p><p><strong>xxl-job-core模块是公共的依赖，供调度中心以及调度任务依赖。</strong></p><p><strong>xxl-job-executor-samples是执行器案例</strong>，有两个执行器案例，xxl-job-executor-sample-springboot是spring版本。xxl-job-executor-sample-frameless是普通的版本，直接通过main方法启动。</p><h2 id=调度中心启动流程分析>调度中心启动流程分析</h2><p><strong>在启动xxl-job，首先应该启动xxl-job-admin，然后启动执行案例的其中一个</strong>。xxl-job-admin是springboot项目，可以直接启动，具体启动方法直接参考官方的文档，非常的详细。今天要将的内容就是xxl-job-admin的启动流程分析。</p><p>在启动xxl-job-admin的过程中，<strong>XxlJobAdminConfig是配置类</strong>，在afterPropertiesSet方法中会创建调度器以及对调度器进行初始化。</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span><span class=lnt>8
+</span><span class=lnt>9
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl>    <span class=kd>private</span> <span class=n>XxlJobScheduler</span> <span class=n>xxlJobScheduler</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=nd>@Override</span>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>afterPropertiesSet</span><span class=o>()</span> <span class=kd>throws</span> <span class=n>Exception</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>adminConfig</span> <span class=o>=</span> <span class=k>this</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=n>xxlJobScheduler</span> <span class=o>=</span> <span class=k>new</span> <span class=n>XxlJobScheduler</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>        <span class=n>xxlJobScheduler</span><span class=o>.</span><span class=na>init</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=xxljobschedulerinit方法主要做了如下几件事>xxlJobScheduler.init()方法主要做了如下几件事</h3><ul><li>国际化初始化 initI18n()</li><li>触发器线程池创建 JobTriggerPoolHelper.toStart();</li><li>注册监控器启动 JobRegistryHelper.getInstance().start();</li><li>失败监控器启动 JobFailMonitorHelper.getInstance().start();</li><li>丢失监控器启动 JobCompleteHelper.getInstance().start();</li><li>日志任务启动 JobLogReportHelper.getInstance().start();</li><li>调度启动 JobScheduleHelper.getInstance().start();</li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl>  <span class=c1>// xxl-job-admin/src/main/java/com/xxl/job/admin/core/scheduler/XxlJobScheduler.java
+</span></span></span><span class=line><span class=cl><span class=c1></span>   <span class=kd>public</span> <span class=kt>void</span> <span class=nf>init</span><span class=o>()</span> <span class=kd>throws</span> <span class=n>Exception</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=c1>// init i18n 初始化国际化
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=n>initI18n</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=c1>// admin trigger pool start 触发器线程池创建
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=n>JobTriggerPoolHelper</span><span class=o>.</span><span class=na>toStart</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=c1>// admin registry monitor run 注册监控器启动
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=n>JobRegistryHelper</span><span class=o>.</span><span class=na>getInstance</span><span class=o>().</span><span class=na>start</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=c1>// admin fail-monitor run 失败监控器启动
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=n>JobFailMonitorHelper</span><span class=o>.</span><span class=na>getInstance</span><span class=o>().</span><span class=na>start</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=c1>// admin lose-monitor run ( depend on JobTriggerPoolHelper )
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=n>JobCompleteHelper</span><span class=o>.</span><span class=na>getInstance</span><span class=o>().</span><span class=na>start</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=c1>// admin log report start  调度启动
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=n>JobLogReportHelper</span><span class=o>.</span><span class=na>getInstance</span><span class=o>().</span><span class=na>start</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=c1>// start-schedule  ( depend on JobTriggerPoolHelper )
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=n>JobScheduleHelper</span><span class=o>.</span><span class=na>getInstance</span><span class=o>().</span><span class=na>start</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=n>logger</span><span class=o>.</span><span class=na>info</span><span class=o>(</span><span class=s>&#34;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; init xxl-job admin success.&#34;</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div><h3 id=触发器线程池创建>触发器线程池创建</h3><p><strong>JobTriggerPoolHelper.toStart()最终调用JobTriggerPoolHelper.start()</strong></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span><span class=lnt>55
+</span><span class=lnt>56
+</span><span class=lnt>57
+</span><span class=lnt>58
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kd>public</span> <span class=kd>class</span> <span class=nc>JobTriggerPoolHelper</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>    <span class=kd>private</span> <span class=kd>static</span> <span class=n>Logger</span> <span class=n>logger</span> <span class=o>=</span> <span class=n>LoggerFactory</span><span class=o>.</span><span class=na>getLogger</span><span class=o>(</span><span class=n>JobTriggerPoolHelper</span><span class=o>.</span><span class=na>class</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>   <span class=c1>// ....
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=kd>private</span> <span class=kd>static</span> <span class=n>JobTriggerPoolHelper</span> <span class=n>helper</span> <span class=o>=</span> <span class=k>new</span> <span class=n>JobTriggerPoolHelper</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=kd>static</span> <span class=kt>void</span> <span class=nf>toStart</span><span class=o>()</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>helper</span><span class=o>.</span><span class=na>start</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=kd>static</span> <span class=kt>void</span> <span class=nf>toStop</span><span class=o>()</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=n>helper</span><span class=o>.</span><span class=na>stop</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// ...
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// ---------------------- trigger pool ----------------------
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl>    <span class=c1>// fast/slow thread pool
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=kd>private</span> <span class=n>ThreadPoolExecutor</span> <span class=n>fastTriggerPool</span> <span class=o>=</span> <span class=kc>null</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>    <span class=kd>private</span> <span class=n>ThreadPoolExecutor</span> <span class=n>slowTriggerPool</span> <span class=o>=</span> <span class=kc>null</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>start</span><span class=o>(){</span>
+</span></span><span class=line><span class=cl>        <span class=n>fastTriggerPool</span> <span class=o>=</span> <span class=k>new</span> <span class=n>ThreadPoolExecutor</span><span class=o>(</span>
+</span></span><span class=line><span class=cl>                <span class=mi>10</span><span class=o>,</span>
+</span></span><span class=line><span class=cl>                <span class=c1>// 最大线程数量从配置中取
+</span></span></span><span class=line><span class=cl><span class=c1></span>                <span class=n>XxlJobAdminConfig</span><span class=o>.</span><span class=na>getAdminConfig</span><span class=o>().</span><span class=na>getTriggerPoolFastMax</span><span class=o>(),</span>
+</span></span><span class=line><span class=cl>                <span class=mi>60L</span><span class=o>,</span>
+</span></span><span class=line><span class=cl>                <span class=n>TimeUnit</span><span class=o>.</span><span class=na>SECONDS</span><span class=o>,</span>
+</span></span><span class=line><span class=cl>                <span class=k>new</span> <span class=n>LinkedBlockingQueue</span><span class=o>&lt;</span><span class=n>Runnable</span><span class=o>&gt;(</span><span class=mi>1000</span><span class=o>),</span>
+</span></span><span class=line><span class=cl>                <span class=k>new</span> <span class=n>ThreadFactory</span><span class=o>()</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>                    <span class=nd>@Override</span>
+</span></span><span class=line><span class=cl>                    <span class=kd>public</span> <span class=n>Thread</span> <span class=nf>newThread</span><span class=o>(</span><span class=n>Runnable</span> <span class=n>r</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>                        <span class=k>return</span> <span class=k>new</span> <span class=n>Thread</span><span class=o>(</span><span class=n>r</span><span class=o>,</span> <span class=s>&#34;xxl-job, admin JobTriggerPoolHelper-fastTriggerPool-&#34;</span> <span class=o>+</span> <span class=n>r</span><span class=o>.</span><span class=na>hashCode</span><span class=o>());</span>
+</span></span><span class=line><span class=cl>                    <span class=o>}</span>
+</span></span><span class=line><span class=cl>                <span class=o>});</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=n>slowTriggerPool</span> <span class=o>=</span> <span class=k>new</span> <span class=n>ThreadPoolExecutor</span><span class=o>(</span>
+</span></span><span class=line><span class=cl>                <span class=mi>10</span><span class=o>,</span>
+</span></span><span class=line><span class=cl>                <span class=n>XxlJobAdminConfig</span><span class=o>.</span><span class=na>getAdminConfig</span><span class=o>().</span><span class=na>getTriggerPoolSlowMax</span><span class=o>(),</span>
+</span></span><span class=line><span class=cl>                <span class=mi>60L</span><span class=o>,</span>
+</span></span><span class=line><span class=cl>                <span class=n>TimeUnit</span><span class=o>.</span><span class=na>SECONDS</span><span class=o>,</span>
+</span></span><span class=line><span class=cl>                <span class=k>new</span> <span class=n>LinkedBlockingQueue</span><span class=o>&lt;</span><span class=n>Runnable</span><span class=o>&gt;(</span><span class=mi>2000</span><span class=o>),</span>
+</span></span><span class=line><span class=cl>                <span class=k>new</span> <span class=n>ThreadFactory</span><span class=o>()</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>                    <span class=nd>@Override</span>
+</span></span><span class=line><span class=cl>                    <span class=kd>public</span> <span class=n>Thread</span> <span class=nf>newThread</span><span class=o>(</span><span class=n>Runnable</span> <span class=n>r</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>                        <span class=k>return</span> <span class=k>new</span> <span class=n>Thread</span><span class=o>(</span><span class=n>r</span><span class=o>,</span> <span class=s>&#34;xxl-job, admin JobTriggerPoolHelper-slowTriggerPool-&#34;</span> <span class=o>+</span> <span class=n>r</span><span class=o>.</span><span class=na>hashCode</span><span class=o>());</span>
+</span></span><span class=line><span class=cl>                    <span class=o>}</span>
+</span></span><span class=line><span class=cl>                <span class=o>});</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=kd>public</span> <span class=kt>void</span> <span class=nf>stop</span><span class=o>()</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>        <span class=c1>//triggerPool.shutdown();
+</span></span></span><span class=line><span class=cl><span class=c1></span>        <span class=n>fastTriggerPool</span><span class=o>.</span><span class=na>shutdownNow</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>        <span class=n>slowTriggerPool</span><span class=o>.</span><span class=na>shutdownNow</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>        <span class=n>logger</span><span class=o>.</span><span class=na>info</span><span class=o>(</span><span class=s>&#34;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; xxl-job trigger thread pool shutdown success.&#34;</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>    <span class=o>}</span>
+</span></span><span class=line><span class=cl>   <span class=c1>// ...
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>fastTriggerPool为快速线程池、slowTriggerPool为慢速线程池，都是采用阻塞队列LinkedBlockingQueue，快速线程池的阻塞队列大小为1000，慢速线程池的阻塞队列大小为2000。快速线程池、慢速线程池在什么时候被用来调度任务呢？默认是用快速调度器调度任务的，当缓存中等待被调度的同一个任务的数量大于10的时候，就用慢速调度器调度任务。</p><h3 id=注册监控器启动>注册监控器启动</h3><p><strong>JobRegistryHelper.getInstance().start()</strong></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>  1
+</span><span class=lnt>  2
+</span><span class=lnt>  3
+</span><span class=lnt>  4
+</span><span class=lnt>  5
+</span><span class=lnt>  6
+</span><span class=lnt>  7
+</span><span class=lnt>  8
+</span><span class=lnt>  9
+</span><span class=lnt> 10
+</span><span class=lnt> 11
+</span><span class=lnt> 12
+</span><span class=lnt> 13
+</span><span class=lnt> 14
+</span><span class=lnt> 15
+</span><span class=lnt> 16
+</span><span class=lnt> 17
+</span><span class=lnt> 18
+</span><span class=lnt> 19
+</span><span class=lnt> 20
+</span><span class=lnt> 21
+</span><span class=lnt> 22
+</span><span class=lnt> 23
+</span><span class=lnt> 24
+</span><span class=lnt> 25
+</span><span class=lnt> 26
+</span><span class=lnt> 27
+</span><span class=lnt> 28
+</span><span class=lnt> 29
+</span><span class=lnt> 30
+</span><span class=lnt> 31
+</span><span class=lnt> 32
+</span><span class=lnt> 33
+</span><span class=lnt> 34
+</span><span class=lnt> 35
+</span><span class=lnt> 36
+</span><span class=lnt> 37
+</span><span class=lnt> 38
+</span><span class=lnt> 39
+</span><span class=lnt> 40
+</span><span class=lnt> 41
+</span><span class=lnt> 42
+</span><span class=lnt> 43
+</span><span class=lnt> 44
+</span><span class=lnt> 45
+</span><span class=lnt> 46
+</span><span class=lnt> 47
+</span><span class=lnt> 48
+</span><span class=lnt> 49
+</span><span class=lnt> 50
+</span><span class=lnt> 51
+</span><span class=lnt> 52
+</span><span class=lnt> 53
+</span><span class=lnt> 54
+</span><span class=lnt> 55
+</span><span class=lnt> 56
+</span><span class=lnt> 57
+</span><span class=lnt> 58
+</span><span class=lnt> 59
+</span><span class=lnt> 60
+</span><span class=lnt> 61
+</span><span class=lnt> 62
+</span><span class=lnt> 63
+</span><span class=lnt> 64
+</span><span class=lnt> 65
+</span><span class=lnt> 66
+</span><span class=lnt> 67
+</span><span class=lnt> 68
+</span><span class=lnt> 69
+</span><span class=lnt> 70
+</span><span class=lnt> 71
+</span><span class=lnt> 72
+</span><span class=lnt> 73
+</span><span class=lnt> 74
+</span><span class=lnt> 75
+</span><span class=lnt> 76
+</span><span class=lnt> 77
+</span><span class=lnt> 78
+</span><span class=lnt> 79
+</span><span class=lnt> 80
+</span><span class=lnt> 81
+</span><span class=lnt> 82
+</span><span class=lnt> 83
+</span><span class=lnt> 84
+</span><span class=lnt> 85
+</span><span class=lnt> 86
+</span><span class=lnt> 87
+</span><span class=lnt> 88
+</span><span class=lnt> 89
+</span><span class=lnt> 90
+</span><span class=lnt> 91
+</span><span class=lnt> 92
+</span><span class=lnt> 93
+</span><span class=lnt> 94
+</span><span class=lnt> 95
+</span><span class=lnt> 96
+</span><span class=lnt> 97
+</span><span class=lnt> 98
+</span><span class=lnt> 99
+</span><span class=lnt>100
+</span><span class=lnt>101
+</span><span class=lnt>102
+</span><span class=lnt>103
+</span><span class=lnt>104
+</span><span class=lnt>105
+</span><span class=lnt>106
+</span><span class=lnt>107
+</span><span class=lnt>108
+</span><span class=lnt>109
+</span><span class=lnt>110
+</span><span class=lnt>111
+</span><span class=lnt>112
+</span><span class=lnt>113
+</span><span class=lnt>114
+</span><span class=lnt>115
+</span><span class=lnt>116
+</span><span class=lnt>117
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=cm>/**
+</span></span></span><span class=line><span class=cl><span class=cm> * job registry instance
+</span></span></span><span class=line><span class=cl><span class=cm> * @author xuxueli 2016-10-02 19:10:24
+</span></span></span><span class=line><span class=cl><span class=cm> */</span>
+</span></span><span class=line><span class=cl><span class=kd>public</span> <span class=kd>class</span> <span class=nc>JobRegistryHelper</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>	<span class=kd>private</span> <span class=kd>static</span> <span class=n>Logger</span> <span class=n>logger</span> <span class=o>=</span> <span class=n>LoggerFactory</span><span class=o>.</span><span class=na>getLogger</span><span class=o>(</span><span class=n>JobRegistryHelper</span><span class=o>.</span><span class=na>class</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>	<span class=kd>private</span> <span class=kd>static</span> <span class=n>JobRegistryHelper</span> <span class=n>instance</span> <span class=o>=</span> <span class=k>new</span> <span class=n>JobRegistryHelper</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>	<span class=kd>public</span> <span class=kd>static</span> <span class=n>JobRegistryHelper</span> <span class=nf>getInstance</span><span class=o>(){</span>
+</span></span><span class=line><span class=cl>		<span class=k>return</span> <span class=n>instance</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>	<span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>	<span class=kd>private</span> <span class=n>ThreadPoolExecutor</span> <span class=n>registryOrRemoveThreadPool</span> <span class=o>=</span> <span class=kc>null</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>	<span class=kd>private</span> <span class=n>Thread</span> <span class=n>registryMonitorThread</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>	<span class=kd>private</span> <span class=kd>volatile</span> <span class=kt>boolean</span> <span class=n>toStop</span> <span class=o>=</span> <span class=kc>false</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>	<span class=kd>public</span> <span class=kt>void</span> <span class=nf>start</span><span class=o>(){</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>		<span class=c1>// for registry or remove
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=n>registryOrRemoveThreadPool</span> <span class=o>=</span> <span class=k>new</span> <span class=n>ThreadPoolExecutor</span><span class=o>(</span>
+</span></span><span class=line><span class=cl>				<span class=mi>2</span><span class=o>,</span>
+</span></span><span class=line><span class=cl>				<span class=mi>10</span><span class=o>,</span>
+</span></span><span class=line><span class=cl>				<span class=mi>30L</span><span class=o>,</span>
+</span></span><span class=line><span class=cl>				<span class=n>TimeUnit</span><span class=o>.</span><span class=na>SECONDS</span><span class=o>,</span>
+</span></span><span class=line><span class=cl>				<span class=k>new</span> <span class=n>LinkedBlockingQueue</span><span class=o>&lt;</span><span class=n>Runnable</span><span class=o>&gt;(</span><span class=mi>2000</span><span class=o>),</span>
+</span></span><span class=line><span class=cl>				<span class=k>new</span> <span class=n>ThreadFactory</span><span class=o>()</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>					<span class=nd>@Override</span>
+</span></span><span class=line><span class=cl>					<span class=kd>public</span> <span class=n>Thread</span> <span class=nf>newThread</span><span class=o>(</span><span class=n>Runnable</span> <span class=n>r</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>						<span class=k>return</span> <span class=k>new</span> <span class=n>Thread</span><span class=o>(</span><span class=n>r</span><span class=o>,</span> <span class=s>&#34;xxl-job, admin JobRegistryMonitorHelper-registryOrRemoveThreadPool-&#34;</span> <span class=o>+</span> <span class=n>r</span><span class=o>.</span><span class=na>hashCode</span><span class=o>());</span>
+</span></span><span class=line><span class=cl>					<span class=o>}</span>
+</span></span><span class=line><span class=cl>				<span class=o>},</span>
+</span></span><span class=line><span class=cl>				<span class=k>new</span> <span class=n>RejectedExecutionHandler</span><span class=o>()</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>					<span class=nd>@Override</span>
+</span></span><span class=line><span class=cl>					<span class=kd>public</span> <span class=kt>void</span> <span class=nf>rejectedExecution</span><span class=o>(</span><span class=n>Runnable</span> <span class=n>r</span><span class=o>,</span> <span class=n>ThreadPoolExecutor</span> <span class=n>executor</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>						<span class=n>r</span><span class=o>.</span><span class=na>run</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>						<span class=n>logger</span><span class=o>.</span><span class=na>warn</span><span class=o>(</span><span class=s>&#34;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; xxl-job, registry or remove too fast, match threadpool rejected handler(run now).&#34;</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>					<span class=o>}</span>
+</span></span><span class=line><span class=cl>				<span class=o>});</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>		<span class=c1>// for monitor
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=n>registryMonitorThread</span> <span class=o>=</span> <span class=k>new</span> <span class=n>Thread</span><span class=o>(</span><span class=k>new</span> <span class=n>Runnable</span><span class=o>()</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>			<span class=nd>@Override</span>
+</span></span><span class=line><span class=cl>			<span class=kd>public</span> <span class=kt>void</span> <span class=nf>run</span><span class=o>()</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>				<span class=k>while</span> <span class=o>(!</span><span class=n>toStop</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>					<span class=k>try</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>						<span class=c1>// auto registry group
+</span></span></span><span class=line><span class=cl><span class=c1></span>						<span class=n>List</span><span class=o>&lt;</span><span class=n>XxlJobGroup</span><span class=o>&gt;</span> <span class=n>groupList</span> <span class=o>=</span> <span class=n>XxlJobAdminConfig</span><span class=o>.</span><span class=na>getAdminConfig</span><span class=o>().</span><span class=na>getXxlJobGroupDao</span><span class=o>().</span><span class=na>findByAddressType</span><span class=o>(</span><span class=mi>0</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>						<span class=k>if</span> <span class=o>(</span><span class=n>groupList</span><span class=o>!=</span><span class=kc>null</span> <span class=o>&amp;&amp;</span> <span class=o>!</span><span class=n>groupList</span><span class=o>.</span><span class=na>isEmpty</span><span class=o>())</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>							<span class=c1>// remove dead address (admin/executor)
+</span></span></span><span class=line><span class=cl><span class=c1></span>							<span class=n>List</span><span class=o>&lt;</span><span class=n>Integer</span><span class=o>&gt;</span> <span class=n>ids</span> <span class=o>=</span> <span class=n>XxlJobAdminConfig</span><span class=o>.</span><span class=na>getAdminConfig</span><span class=o>().</span><span class=na>getXxlJobRegistryDao</span><span class=o>().</span><span class=na>findDead</span><span class=o>(</span><span class=n>RegistryConfig</span><span class=o>.</span><span class=na>DEAD_TIMEOUT</span><span class=o>,</span> <span class=k>new</span> <span class=n>Date</span><span class=o>());</span>
+</span></span><span class=line><span class=cl>							<span class=k>if</span> <span class=o>(</span><span class=n>ids</span><span class=o>!=</span><span class=kc>null</span> <span class=o>&amp;&amp;</span> <span class=n>ids</span><span class=o>.</span><span class=na>size</span><span class=o>()&gt;</span><span class=mi>0</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>								<span class=n>XxlJobAdminConfig</span><span class=o>.</span><span class=na>getAdminConfig</span><span class=o>().</span><span class=na>getXxlJobRegistryDao</span><span class=o>().</span><span class=na>removeDead</span><span class=o>(</span><span class=n>ids</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>							<span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>							<span class=c1>// fresh online address (admin/executor)
+</span></span></span><span class=line><span class=cl><span class=c1></span>							<span class=n>HashMap</span><span class=o>&lt;</span><span class=n>String</span><span class=o>,</span> <span class=n>List</span><span class=o>&lt;</span><span class=n>String</span><span class=o>&gt;&gt;</span> <span class=n>appAddressMap</span> <span class=o>=</span> <span class=k>new</span> <span class=n>HashMap</span><span class=o>&lt;</span><span class=n>String</span><span class=o>,</span> <span class=n>List</span><span class=o>&lt;</span><span class=n>String</span><span class=o>&gt;&gt;();</span>
+</span></span><span class=line><span class=cl>							<span class=n>List</span><span class=o>&lt;</span><span class=n>XxlJobRegistry</span><span class=o>&gt;</span> <span class=n>list</span> <span class=o>=</span> <span class=n>XxlJobAdminConfig</span><span class=o>.</span><span class=na>getAdminConfig</span><span class=o>().</span><span class=na>getXxlJobRegistryDao</span><span class=o>().</span><span class=na>findAll</span><span class=o>(</span><span class=n>RegistryConfig</span><span class=o>.</span><span class=na>DEAD_TIMEOUT</span><span class=o>,</span> <span class=k>new</span> <span class=n>Date</span><span class=o>());</span>
+</span></span><span class=line><span class=cl>							<span class=k>if</span> <span class=o>(</span><span class=n>list</span> <span class=o>!=</span> <span class=kc>null</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>								<span class=k>for</span> <span class=o>(</span><span class=n>XxlJobRegistry</span> <span class=n>item</span><span class=o>:</span> <span class=n>list</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>									<span class=k>if</span> <span class=o>(</span><span class=n>RegistryConfig</span><span class=o>.</span><span class=na>RegistType</span><span class=o>.</span><span class=na>EXECUTOR</span><span class=o>.</span><span class=na>name</span><span class=o>().</span><span class=na>equals</span><span class=o>(</span><span class=n>item</span><span class=o>.</span><span class=na>getRegistryGroup</span><span class=o>()))</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>										<span class=n>String</span> <span class=n>appname</span> <span class=o>=</span> <span class=n>item</span><span class=o>.</span><span class=na>getRegistryKey</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>										<span class=n>List</span><span class=o>&lt;</span><span class=n>String</span><span class=o>&gt;</span> <span class=n>registryList</span> <span class=o>=</span> <span class=n>appAddressMap</span><span class=o>.</span><span class=na>get</span><span class=o>(</span><span class=n>appname</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>										<span class=k>if</span> <span class=o>(</span><span class=n>registryList</span> <span class=o>==</span> <span class=kc>null</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>											<span class=n>registryList</span> <span class=o>=</span> <span class=k>new</span> <span class=n>ArrayList</span><span class=o>&lt;</span><span class=n>String</span><span class=o>&gt;();</span>
+</span></span><span class=line><span class=cl>										<span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>										<span class=k>if</span> <span class=o>(!</span><span class=n>registryList</span><span class=o>.</span><span class=na>contains</span><span class=o>(</span><span class=n>item</span><span class=o>.</span><span class=na>getRegistryValue</span><span class=o>()))</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>											<span class=n>registryList</span><span class=o>.</span><span class=na>add</span><span class=o>(</span><span class=n>item</span><span class=o>.</span><span class=na>getRegistryValue</span><span class=o>());</span>
+</span></span><span class=line><span class=cl>										<span class=o>}</span>
+</span></span><span class=line><span class=cl>										<span class=n>appAddressMap</span><span class=o>.</span><span class=na>put</span><span class=o>(</span><span class=n>appname</span><span class=o>,</span> <span class=n>registryList</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>									<span class=o>}</span>
+</span></span><span class=line><span class=cl>								<span class=o>}</span>
+</span></span><span class=line><span class=cl>							<span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>							<span class=c1>// fresh group address
+</span></span></span><span class=line><span class=cl><span class=c1></span>							<span class=k>for</span> <span class=o>(</span><span class=n>XxlJobGroup</span> <span class=n>group</span><span class=o>:</span> <span class=n>groupList</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>								<span class=n>List</span><span class=o>&lt;</span><span class=n>String</span><span class=o>&gt;</span> <span class=n>registryList</span> <span class=o>=</span> <span class=n>appAddressMap</span><span class=o>.</span><span class=na>get</span><span class=o>(</span><span class=n>group</span><span class=o>.</span><span class=na>getAppname</span><span class=o>());</span>
+</span></span><span class=line><span class=cl>								<span class=n>String</span> <span class=n>addressListStr</span> <span class=o>=</span> <span class=kc>null</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>								<span class=k>if</span> <span class=o>(</span><span class=n>registryList</span><span class=o>!=</span><span class=kc>null</span> <span class=o>&amp;&amp;</span> <span class=o>!</span><span class=n>registryList</span><span class=o>.</span><span class=na>isEmpty</span><span class=o>())</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>									<span class=n>Collections</span><span class=o>.</span><span class=na>sort</span><span class=o>(</span><span class=n>registryList</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>									<span class=n>StringBuilder</span> <span class=n>addressListSB</span> <span class=o>=</span> <span class=k>new</span> <span class=n>StringBuilder</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>									<span class=k>for</span> <span class=o>(</span><span class=n>String</span> <span class=n>item</span><span class=o>:</span><span class=n>registryList</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>										<span class=n>addressListSB</span><span class=o>.</span><span class=na>append</span><span class=o>(</span><span class=n>item</span><span class=o>).</span><span class=na>append</span><span class=o>(</span><span class=s>&#34;,&#34;</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>									<span class=o>}</span>
+</span></span><span class=line><span class=cl>									<span class=n>addressListStr</span> <span class=o>=</span> <span class=n>addressListSB</span><span class=o>.</span><span class=na>toString</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>									<span class=n>addressListStr</span> <span class=o>=</span> <span class=n>addressListStr</span><span class=o>.</span><span class=na>substring</span><span class=o>(</span><span class=mi>0</span><span class=o>,</span> <span class=n>addressListStr</span><span class=o>.</span><span class=na>length</span><span class=o>()-</span><span class=mi>1</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>								<span class=o>}</span>
+</span></span><span class=line><span class=cl>								<span class=n>group</span><span class=o>.</span><span class=na>setAddressList</span><span class=o>(</span><span class=n>addressListStr</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>								<span class=n>group</span><span class=o>.</span><span class=na>setUpdateTime</span><span class=o>(</span><span class=k>new</span> <span class=n>Date</span><span class=o>());</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>								<span class=n>XxlJobAdminConfig</span><span class=o>.</span><span class=na>getAdminConfig</span><span class=o>().</span><span class=na>getXxlJobGroupDao</span><span class=o>().</span><span class=na>update</span><span class=o>(</span><span class=n>group</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>							<span class=o>}</span>
+</span></span><span class=line><span class=cl>						<span class=o>}</span>
+</span></span><span class=line><span class=cl>					<span class=o>}</span> <span class=k>catch</span> <span class=o>(</span><span class=n>Exception</span> <span class=n>e</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>						<span class=k>if</span> <span class=o>(!</span><span class=n>toStop</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>							<span class=n>logger</span><span class=o>.</span><span class=na>error</span><span class=o>(</span><span class=s>&#34;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; xxl-job, job registry monitor thread error:{}&#34;</span><span class=o>,</span> <span class=n>e</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>						<span class=o>}</span>
+</span></span><span class=line><span class=cl>					<span class=o>}</span>
+</span></span><span class=line><span class=cl>					<span class=k>try</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>						<span class=n>TimeUnit</span><span class=o>.</span><span class=na>SECONDS</span><span class=o>.</span><span class=na>sleep</span><span class=o>(</span><span class=n>RegistryConfig</span><span class=o>.</span><span class=na>BEAT_TIMEOUT</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>					<span class=o>}</span> <span class=k>catch</span> <span class=o>(</span><span class=n>InterruptedException</span> <span class=n>e</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>						<span class=k>if</span> <span class=o>(!</span><span class=n>toStop</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>							<span class=n>logger</span><span class=o>.</span><span class=na>error</span><span class=o>(</span><span class=s>&#34;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; xxl-job, job registry monitor thread error:{}&#34;</span><span class=o>,</span> <span class=n>e</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>						<span class=o>}</span>
+</span></span><span class=line><span class=cl>					<span class=o>}</span>
+</span></span><span class=line><span class=cl>				<span class=o>}</span>
+</span></span><span class=line><span class=cl>				<span class=n>logger</span><span class=o>.</span><span class=na>info</span><span class=o>(</span><span class=s>&#34;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; xxl-job, job registry monitor thread stop&#34;</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>			<span class=o>}</span>
+</span></span><span class=line><span class=cl>		<span class=o>});</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// 将registryMonitorThread设置为守护线程
+</span></span></span><span class=line><span class=cl><span class=c1></span>		<span class=n>registryMonitorThread</span><span class=o>.</span><span class=na>setDaemon</span><span class=o>(</span><span class=kc>true</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>		<span class=n>registryMonitorThread</span><span class=o>.</span><span class=na>setName</span><span class=o>(</span><span class=s>&#34;xxl-job, admin JobRegistryMonitorHelper-registryMonitorThread&#34;</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>		<span class=n>registryMonitorThread</span><span class=o>.</span><span class=na>start</span><span class=o>();</span>
+</span></span><span class=line><span class=cl>	<span class=o>}</span>
+</span></span><span class=line><span class=cl>  <span class=c1>// ...
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=o>}</span>
+</span></span></code></pre></td></tr></table></div></div><ul><li>JobRegistryHelper的start创建了一个调度任务注册线程池registryOrRemoveThreadPool以及注册监控器线程registryMonitorThread，调度任务注册线程池用来执行调度任务的注册，注册监控器线程用来监控执行器的机器是否下线。然后将registryMonitorThread设置为守护线程，最后启动registryMonitorThread线程，开始监控执行器的机器。</li><li>registryMonitorThread线程的run方法的代码逻辑参考上述代码片段的registryMonitorThread=new 中的run方法：run()方法一直执行，直到服务停止.</li><li>第一将已经下线的执行器的记录从数据库中删除，</li><li>第二将还在线的执行器机器记录重新设置执行器地址以及更新执行器的时间，然后更新数据库的记录。</li><li>怎么判定执行器已经下线了:如果数据库中的update_time字段小于当前时间减去死亡期限，那么说明已经执行器在死亡期限没有进行更新时间，就判定已经下线了。执行器在启动的时候，会启动一个执行器线程不断的执行注册任务，执行器任务会更新update_time字段。</li></ul><h3 id=失败监控器启动>失败监控器启动</h3><p><strong>JobFailMonitorHelper.getInstance().start()</strong></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span><span class=lnt>49
+</span><span class=lnt>50
+</span><span class=lnt>51
+</span><span class=lnt>52
+</span><span class=lnt>53
+</span><span class=lnt>54
+</span><span class=lnt>55
+</span><span class=lnt>56
+</span><span class=lnt>57
+</span><span class=lnt>58
+</span><span class=lnt>59
+</span><span class=lnt>60
+</span><span class=lnt>61
+</span><span class=lnt>62
+</span><span class=lnt>63
+</span><span class=lnt>64
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=c1>// ...
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>monitorThread</span> <span class=o>=</span> <span class=k>new</span> <span class=n>Thread</span><span class=o>(</span><span class=k>new</span> <span class=n>Runnable</span><span class=o>()</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>			<span class=nd>@Override</span>
+</span></span><span class=line><span class=cl>			<span class=kd>public</span> <span class=kt>void</span> <span class=nf>run</span><span class=o>()</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>				<span class=c1>// monitor
+</span></span></span><span class=line><span class=cl><span class=c1></span>				<span class=k>while</span> <span class=o>(!</span><span class=n>toStop</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>					<span class=k>try</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>						<span class=n>List</span><span class=o>&lt;</span><span class=n>Long</span><span class=o>&gt;</span> <span class=n>failLogIds</span> <span class=o>=</span> <span class=n>XxlJobAdminConfig</span><span class=o>.</span><span class=na>getAdminConfig</span><span class=o>().</span><span class=na>getXxlJobLogDao</span><span class=o>().</span><span class=na>findFailJobLogIds</span><span class=o>(</span><span class=mi>1000</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>						<span class=k>if</span> <span class=o>(</span><span class=n>failLogIds</span><span class=o>!=</span><span class=kc>null</span> <span class=o>&amp;&amp;</span> <span class=o>!</span><span class=n>failLogIds</span><span class=o>.</span><span class=na>isEmpty</span><span class=o>())</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>							<span class=k>for</span> <span class=o>(</span><span class=kt>long</span> <span class=n>failLogId</span><span class=o>:</span> <span class=n>failLogIds</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>								<span class=c1>// lock log
+</span></span></span><span class=line><span class=cl><span class=c1></span>								<span class=kt>int</span> <span class=n>lockRet</span> <span class=o>=</span> <span class=n>XxlJobAdminConfig</span><span class=o>.</span><span class=na>getAdminConfig</span><span class=o>().</span><span class=na>getXxlJobLogDao</span><span class=o>().</span><span class=na>updateAlarmStatus</span><span class=o>(</span><span class=n>failLogId</span><span class=o>,</span> <span class=mi>0</span><span class=o>,</span> <span class=o>-</span><span class=mi>1</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>								<span class=k>if</span> <span class=o>(</span><span class=n>lockRet</span> <span class=o>&lt;</span> <span class=mi>1</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>									<span class=k>continue</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>								<span class=o>}</span>
+</span></span><span class=line><span class=cl>								<span class=n>XxlJobLog</span> <span class=n>log</span> <span class=o>=</span> <span class=n>XxlJobAdminConfig</span><span class=o>.</span><span class=na>getAdminConfig</span><span class=o>().</span><span class=na>getXxlJobLogDao</span><span class=o>().</span><span class=na>load</span><span class=o>(</span><span class=n>failLogId</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>								<span class=n>XxlJobInfo</span> <span class=n>info</span> <span class=o>=</span> <span class=n>XxlJobAdminConfig</span><span class=o>.</span><span class=na>getAdminConfig</span><span class=o>().</span><span class=na>getXxlJobInfoDao</span><span class=o>().</span><span class=na>loadById</span><span class=o>(</span><span class=n>log</span><span class=o>.</span><span class=na>getJobId</span><span class=o>());</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>								<span class=c1>// 1、fail retry monitor
+</span></span></span><span class=line><span class=cl><span class=c1></span>								<span class=k>if</span> <span class=o>(</span><span class=n>log</span><span class=o>.</span><span class=na>getExecutorFailRetryCount</span><span class=o>()</span> <span class=o>&gt;</span> <span class=mi>0</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>									<span class=n>JobTriggerPoolHelper</span><span class=o>.</span><span class=na>trigger</span><span class=o>(</span><span class=n>log</span><span class=o>.</span><span class=na>getJobId</span><span class=o>(),</span> <span class=n>TriggerTypeEnum</span><span class=o>.</span><span class=na>RETRY</span><span class=o>,</span> <span class=o>(</span><span class=n>log</span><span class=o>.</span><span class=na>getExecutorFailRetryCount</span><span class=o>()-</span><span class=mi>1</span><span class=o>),</span> <span class=n>log</span><span class=o>.</span><span class=na>getExecutorShardingParam</span><span class=o>(),</span> <span class=n>log</span><span class=o>.</span><span class=na>getExecutorParam</span><span class=o>(),</span> <span class=kc>null</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>									<span class=n>String</span> <span class=n>retryMsg</span> <span class=o>=</span> <span class=s>&#34;&lt;br&gt;&lt;br&gt;&lt;span style=\&#34;color:#F39C12;\&#34; &gt; &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&#34;</span><span class=o>+</span> <span class=n>I18nUtil</span><span class=o>.</span><span class=na>getString</span><span class=o>(</span><span class=s>&#34;jobconf_trigger_type_retry&#34;</span><span class=o>)</span> <span class=o>+</span><span class=s>&#34;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; &lt;/span&gt;&lt;br&gt;&#34;</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>									<span class=n>log</span><span class=o>.</span><span class=na>setTriggerMsg</span><span class=o>(</span><span class=n>log</span><span class=o>.</span><span class=na>getTriggerMsg</span><span class=o>()</span> <span class=o>+</span> <span class=n>retryMsg</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>									<span class=n>XxlJobAdminConfig</span><span class=o>.</span><span class=na>getAdminConfig</span><span class=o>().</span><span class=na>getXxlJobLogDao</span><span class=o>().</span><span class=na>updateTriggerInfo</span><span class=o>(</span><span class=n>log</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>								<span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>								<span class=c1>// 2、fail alarm monitor
+</span></span></span><span class=line><span class=cl><span class=c1></span>								<span class=kt>int</span> <span class=n>newAlarmStatus</span> <span class=o>=</span> <span class=mi>0</span><span class=o>;</span>		<span class=c1>// 告警状态：0-默认、-1=锁定状态、1-无需告警、2-告警成功、3-告警失败
+</span></span></span><span class=line><span class=cl><span class=c1></span>								<span class=k>if</span> <span class=o>(</span><span class=n>info</span><span class=o>!=</span><span class=kc>null</span> <span class=o>&amp;&amp;</span> <span class=n>info</span><span class=o>.</span><span class=na>getAlarmEmail</span><span class=o>()!=</span><span class=kc>null</span> <span class=o>&amp;&amp;</span> <span class=n>info</span><span class=o>.</span><span class=na>getAlarmEmail</span><span class=o>().</span><span class=na>trim</span><span class=o>().</span><span class=na>length</span><span class=o>()&gt;</span><span class=mi>0</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>									<span class=kt>boolean</span> <span class=n>alarmResult</span> <span class=o>=</span> <span class=n>XxlJobAdminConfig</span><span class=o>.</span><span class=na>getAdminConfig</span><span class=o>().</span><span class=na>getJobAlarmer</span><span class=o>().</span><span class=na>alarm</span><span class=o>(</span><span class=n>info</span><span class=o>,</span> <span class=n>log</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>									<span class=n>newAlarmStatus</span> <span class=o>=</span> <span class=n>alarmResult</span><span class=o>?</span><span class=mi>2</span><span class=o>:</span><span class=mi>3</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>								<span class=o>}</span> <span class=k>else</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>									<span class=n>newAlarmStatus</span> <span class=o>=</span> <span class=mi>1</span><span class=o>;</span>
+</span></span><span class=line><span class=cl>								<span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>								<span class=n>XxlJobAdminConfig</span><span class=o>.</span><span class=na>getAdminConfig</span><span class=o>().</span><span class=na>getXxlJobLogDao</span><span class=o>().</span><span class=na>updateAlarmStatus</span><span class=o>(</span><span class=n>failLogId</span><span class=o>,</span> <span class=o>-</span><span class=mi>1</span><span class=o>,</span> <span class=n>newAlarmStatus</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>							<span class=o>}</span>
+</span></span><span class=line><span class=cl>						<span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>					<span class=o>}</span> <span class=k>catch</span> <span class=o>(</span><span class=n>Exception</span> <span class=n>e</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>						<span class=k>if</span> <span class=o>(!</span><span class=n>toStop</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>							<span class=n>logger</span><span class=o>.</span><span class=na>error</span><span class=o>(</span><span class=s>&#34;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; xxl-job, job fail monitor thread error:{}&#34;</span><span class=o>,</span> <span class=n>e</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>						<span class=o>}</span>
+</span></span><span class=line><span class=cl>					<span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>                    <span class=k>try</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>                        <span class=n>TimeUnit</span><span class=o>.</span><span class=na>SECONDS</span><span class=o>.</span><span class=na>sleep</span><span class=o>(</span><span class=mi>10</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>                    <span class=o>}</span> <span class=k>catch</span> <span class=o>(</span><span class=n>Exception</span> <span class=n>e</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>                        <span class=k>if</span> <span class=o>(!</span><span class=n>toStop</span><span class=o>)</span> <span class=o>{</span>
+</span></span><span class=line><span class=cl>                            <span class=n>logger</span><span class=o>.</span><span class=na>error</span><span class=o>(</span><span class=n>e</span><span class=o>.</span><span class=na>getMessage</span><span class=o>(),</span> <span class=n>e</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>                        <span class=o>}</span>
+</span></span><span class=line><span class=cl>                    <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>                <span class=o>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>				<span class=n>logger</span><span class=o>.</span><span class=na>info</span><span class=o>(</span><span class=s>&#34;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; xxl-job, job fail monitor thread stop&#34;</span><span class=o>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>			<span class=o>}</span>
+</span></span><span class=line><span class=cl>		<span class=o>});</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// ...
+</span></span></span></code></pre></td></tr></table></div></div><ul><li>1 创建了一个名字为monitorThread的线程，并设为守护线程，然后启动这个线程。run方法一直运行，直到线程停止。</li><li>2 run方法的首先从数据库中获取失败的调度任务日志列表（每次最多一千条）</li><li>3 遍历失败的调度任务日志列表：</li></ul><blockquote><ul><li>3.1 将失败的调度任务日志进行锁定。</li><li>3.2 如果调度任务的失败重试次数大于0,可重试，触发任务执行(JobTriggerPoolHelper.trigger())，更新任务日志信息（重试次数减一）。</li><li>3.3 当邮件不为空时，触发告警信息，最后将锁定的日志状态更新为告警状态。</li></ul></blockquote><h3 id=丢失掉线监控器启动>丢失(掉线)监控器启动</h3><p><strong>JobCompleteHelper.getInstance().start();代码组织同上略去</strong></p><ul><li>启动回调线程池callbackThreadPool和丢失(掉线)监控线程monitorThread</li><li>丢失(掉线)监控线程monitorThread任务结果丢失处理：调度记录停留在 &ldquo;运行中&rdquo; 状态超过10min，且对应执行器心跳注册失败不在线，则将本地调度主动标记失败；</li></ul><h3 id=日志任务启动>日志任务启动</h3><p><strong>JobLogReportHelper.getInstance().start() 代码组织同上略去</strong></p><ul><li><p>1、统计当前时间前三天的触发任务的数量、运行中的任务的数量、成功的任务数量、任务失败的数量，然后保存在数据库中。</p></li><li><p>2、根据配置的保存日志的过期时间，将已经过期的日志从数据库中查出来，然后清理过期的日志。日志任务启动是创意了一个线程，然后一直在后台运行。</p></li><li><p>调度启动 JobScheduleHelper.getInstance().start();</p></li></ul><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java></code></pre></td></tr></table></div></div><p>参考资料： <a href=https://www.zhihu.com/column/c_1442233921593761792 target=_blank rel="noopener noreffer">https://www.zhihu.com/column/c_1442233921593761792</a></p></div><script src=https://cdn.jsdelivr.net/gh/jmnote/plantuml-encoder@1.2.4/dist/plantuml-encoder.min.js integrity="sha256-Qsk2KRBCN5qVZX7B+8+2IvQl1Aqc723qV1tBCQaVoqo=" crossorigin=anonymous></script>
+<script>(function(){let e="language-";Array.prototype.forEach.call(document.querySelectorAll("[class^="+e+"]"),function(e){if(console.info(e),e.innerText.indexOf("startuml")>0){console.log("is plantuml:"+e.innerText);let t=document.createElement("IMG");t.loading="lazy",t.src="http://www.plantuml.com/plantuml/svg/~1"+plantumlEncoder.encode(e.innerText),e.parentNode.parentNode.insertBefore(t,e.parentNode),e.style.display="none"}else console.log("not plantuml")})})()</script><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>Updated on 2021-09-07</span></div></div><div class=post-info-line><div class=post-info-md></div><div class=post-info-share><span><a href=javascript:void(0); title="Share on Twitter" data-sharer=twitter data-url=http://example.org/xxl-job/ data-title="Xxl Job"><i class="fab fa-twitter fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Facebook" data-sharer=facebook data-url=http://example.org/xxl-job/><i class="fab fa-facebook-square fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Hacker News" data-sharer=hackernews data-url=http://example.org/xxl-job/ data-title="Xxl Job"><i class="fab fa-hacker-news fa-fw" aria-hidden=true></i></a><a href=javascript:void(0); title="Share on Line" data-sharer=line data-url=http://example.org/xxl-job/ data-title="Xxl Job"><i data-svg-src=https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg aria-hidden=true></i></a><a href=javascript:void(0); title="Share on 微博" data-sharer=weibo data-url=http://example.org/xxl-job/ data-title="Xxl Job"><i class="fab fa-weibo fa-fw" aria-hidden=true></i></a></span></div></div></div><div class=post-info-more><section class=post-tags></section><section><span><a href=javascript:void(0); onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span></section></div><div class=post-nav><a href=/books/ class=prev rel=prev title=架构类书籍资料><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>架构类书籍资料</a>
+<a href=/inventory-core-sharding-design/ class=next rel=next title=库存中心分库分表设计>库存中心分库分表设计<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.114.0">Hugo</a> | Theme - <a href=https://github.com/dillonzq/LoveIt target=_blank rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden=true></i> LoveIt</a></div><div class=footer-line itemscope itemtype=http://schema.org/CreativeWork><i class="far fa-copyright fa-fw" aria-hidden=true></i><span itemprop=copyrightYear>2021 - 2025</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>Itlaohuo</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title="Back to Top"><i class="fas fa-arrow-up fa-fw" aria-hidden=true></i>
+</a><a href=# id=view-comments class=fixed-button title="View Comments"><i class="fas fa-comment fa-fw" aria-hidden=true></i></a></div><script type=text/javascript src=https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js></script><script type=text/javascript src=https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:50},comment:{},search:{highlightTag:"em",lunrIndexURL:"/index.json",maxResultLength:10,noResultsFound:"No results found",snippetLength:30,type:"lunr"}}</script><script type=text/javascript src=/js/theme.min.js></script></body></html>
